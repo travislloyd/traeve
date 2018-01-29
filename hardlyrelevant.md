@@ -39,3 +39,18 @@ layout: post-list
     ~ ~ ~ ~ ~ ~ ~
   </p>
 </div>
+
+<div>
+  <form action="https://tinyletter.com/traeve" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/traeve', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+  <label for="tlemail">Interested?  Enter your email address to join the mailing list:</label>
+  <span class="form-input"> 
+    <input type="text" style="width:140px;" name="email" id="tlemail" />
+    <input type="hidden" value="1" name="embed"/>
+    <input type="submit" value="Subscribe" />
+  </span>
+  </form>
+</div>
+
+<p>
+  ~ ~ ~ ~ ~ ~ ~
+</p>

@@ -161,6 +161,11 @@ table {
         padding: 0 .5rem;
         font-size: 2rem;
     }
+
+    .form-input {
+      padding-top: 20px;
+      display: block;
+    }
 }
 
 .content-wrapper {
@@ -180,6 +185,11 @@ h2 {
   font-size: 10pt;
 }
 
+h3 {
+  font-size: 24pt;
+  padding-bottom: 20px;
+}
+
 p {
   font-size: 12pt;
   padding-bottom: 20px;
@@ -192,4 +202,8 @@ em {
 
 strong {
   font-weight: bold;
+}
+
+form {
+  padding-bottom: 20px;
 }
