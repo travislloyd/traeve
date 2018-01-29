@@ -26,7 +26,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/img/default_t.jpg
+      image: /img/default_t.jpg
 
 # Build settings
 markdown: kramdown
