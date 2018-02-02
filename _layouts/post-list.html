@@ -1,20 +1,19 @@
 ---
-layout: page 
+layout: full-width 
 ---
-
 {{ content }}
-<h3>Archive</h3>
+<h2>archive</h2>
 <ul class="myposts">
 {% for post in site.posts reversed %}
     <li>
       <span>{{ post.title }}</span>
       |
-      <span>Side A
-        <a target="_blank" href="{{ post.youtube-a }}">YouTube</a> / <a target="_blank" href="{{ post.download-a }}">Download</a>
+      <span>side a
+        <a target="_blank" href="{{ post.youtube-a }}">youtube</a> / <a target="_blank" href="{{ post.download-a }}">download</a>
       </span>
       |
-      <span>Side B
-        <a target="_blank" href="{{ post.youtube-b }}">YouTube</a> / <a target="_blank" href="{{ post.download-b }}">Download</a>
+      <span>side b
+        <a target="_blank" href="{{ post.youtube-b }}">youtube</a> / <a target="_blank" href="{{ post.download-b }}">download</a>
       </span>
     </li>
 {% endfor %}

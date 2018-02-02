@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  font-size: 1em ;
+  line-height: 1.375em;
 }
 ol, ul {
 	list-style: none;
@@ -65,10 +66,15 @@ table {
   background-position: -619px -5px;
 }
 
-.page-content {
-    font-family: "Courier New", Courier, monospace; 
+#page-content {
+  padding: 1em 2em;
+  font-family: "Courier New", Courier, monospace; 
 }
-
+.content-wrapper {
+  max-width: 700px;
+  margin: auto;
+  padding: 2em;
+}
 .ticker-wrap {
     position: fixed;
     width: 100%;
@@ -149,7 +155,6 @@ table {
 .left-to-right .ticker {
     animation-name: reverseTicker;
 }
-
 @media only screen and (max-width: 700px) {
     .landing-image {
         width: 95%;
@@ -167,43 +172,74 @@ table {
       display: block;
     }
 }
-
-.content-wrapper {
-  padding: 1em 2em;
-}
-
-header {
+form {
   padding-bottom: 20px;
 }
-
-h1 {
-  font-size: 30pt;
+a {
+  color: inherit;
 }
-
-h2 {
-  font-style: italic;
-  font-size: 10pt;
-}
-
-h3 {
-  font-size: 24pt;
-  padding-bottom: 20px;
-}
-
-p {
-  font-size: 12pt;
-  padding-bottom: 20px;
-}
-
 em {
   font-style: italic;
-  font-weight: bold;
 }
-
 strong {
   font-weight: bold;
 }
-
-form {
+hr {
+  margin: 40px 0px;
+}
+header {
   padding-bottom: 20px;
+}
+header p {
+  font-style: italic;
+  font-size: 10pt;
+}
+h1 {
+  font-size: 3em;
+  line-height: 1.05em;
+}
+h2 {
+  font-size: 2.25em;
+  line-height: 1.25em;
+  padding-bottom: 20px;
+}
+h3 {
+  font-size: 1.75em;
+  line-height: 1.25em;
+}
+h4 {
+  font-size: 1.125em;
+  line-height: 1.22em;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+p {
+  padding-bottom: 20px;
+}
+li {
+  padding-bottom: 5px;
+}
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+  h2 {
+    font-size: 1.625em;
+    line-height: 1.15em;
+    padding-bottom: 20px;
+  }
+  h3 {
+    font-size: 1.375em;
+    line-height: 1.136em;
+  }
+  h4 {
+    line-height: 1.11em;
+  }
+  body {
+    line-height: 1.25em;
+  }
+  .content-wrapper {
+    padding: 0em;
+  }
 }
