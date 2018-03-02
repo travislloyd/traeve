@@ -1,6 +1,7 @@
 ---
 title: "volume 8 (2/19/18 - 2/25/18): for jacob"
 subtitle: "hardly controversial subseries vol.2: visiting culture friends"
+category: hardlyrelevant
 youtube-a: https://youtu.be/T9-FZbWcMLg
 download-a: https://drive.google.com/open?id=186dDuoehe4L5_U4TrjeADSNtjz-FVadc
 youtube-b: https://youtu.be/uu8p4fzt-bo
