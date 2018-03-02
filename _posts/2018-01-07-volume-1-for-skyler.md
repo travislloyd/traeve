@@ -1,5 +1,6 @@
 ---
 title: "volume 1 (1/1/18 - 1/7/18): for skyler"
+subtitle: begin erroneous transmission / enter deep winter 
 youtube-a: https://youtu.be/1ra90jbJDJU
 download-a: https://drive.google.com/open?id=1pPrxfHIqdRIj9UKPg25v9nqluo8xQmCV
 youtube-b: https://youtu.be/5K5m3N_jfVQ
