@@ -8,7 +8,7 @@ download-a: https://drive.google.com/open?id=1pPrxfHIqdRIj9UKPg25v9nqluo8xQmCV
 youtube-b: https://youtu.be/5K5m3N_jfVQ
 download-b: https://drive.google.com/open?id=1n3iY0lH3GukMB18RuLPunPB3G9VtT80S
 images: 
-- HRv1SideA.jpg
+- HRv1SideA.JPG
 layout: two-col 
 ---
 #### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
