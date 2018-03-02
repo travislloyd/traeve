@@ -6,18 +6,8 @@ layout: full-width
 <ul class="myposts">
 {% for post in site.posts reversed %}
     <li>
-      <span>{{ post.title }}</span>
-      |
-      <span>side a
-        <a target="_blank" href="{{ post.youtube-a }}">youtube</a> / <a target="_blank" href="{{ post.download-a }}">download</a>
-      </span>
-      |
-      <span>side b
-        <a target="_blank" href="{{ post.youtube-b }}">youtube</a> / <a target="_blank" href="{{ post.download-b }}">download</a>
-      </span>
-      |
       <span>
-        <a target="_blank" href="{{ post.url }}">tracklist</a>
+        <a target="_blank" href="{{ post.url }}">{{ post.title }}</a>
       </span>
     </li>
 {% endfor %}
