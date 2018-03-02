@@ -69,6 +69,8 @@ table {
 #page-content {
   padding: 1em 2em;
   font-family: "Courier New", Courier, monospace; 
+  max-width: 1200px;
+  margin: auto;
 }
 .content-wrapper {
   max-width: 700px;
@@ -221,6 +223,26 @@ li {
 }
 ol {
   list-style-position: inside;
+}
+#col-container {
+  display: flex;
+  margin: 0 -20px;
+}
+#col2 {
+  width: 300px;
+}
+#col1 {
+  flex: 1;
+}
+.image-col__img {
+  width: 100%;
+  padding: 5px 0px;
+}
+.col {
+  margin: 0 20px;
+}
+.right-link {
+  float: right;
 }
 @media only screen and (max-width: 700px) {
   h1 {

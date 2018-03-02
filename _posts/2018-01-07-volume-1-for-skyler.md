@@ -6,7 +6,10 @@ youtube-a: https://youtu.be/1ra90jbJDJU
 download-a: https://drive.google.com/open?id=1pPrxfHIqdRIj9UKPg25v9nqluo8xQmCV
 youtube-b: https://youtu.be/5K5m3N_jfVQ
 download-b: https://drive.google.com/open?id=1n3iY0lH3GukMB18RuLPunPB3G9VtT80S
-layout: full-width 
+images: 
+- HRv1SideA.jpg
+- HRv1SideB.jpg
+layout: two-col 
 ---
 #### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 1. No More Quirky Indie Murders Please -- Plum Professional
