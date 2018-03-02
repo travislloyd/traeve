@@ -222,6 +222,7 @@ li {
   padding-bottom: 5px;
 }
 ol {
+  padding-bottom: 20px;
   list-style-position: inside;
 }
 #col-container {
@@ -266,5 +267,12 @@ ol {
   }
   .content-wrapper {
     padding: 0em;
+  }
+  #col-container {
+    display: block;
+  }
+  #col2 {
+    width: 75%;
+    margin: auto;
   }
 }
