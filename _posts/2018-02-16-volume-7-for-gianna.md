@@ -2,11 +2,14 @@
 title: "volume 7 (2/12/18 - 2/18/18): for gianna"
 subtitle: "glimpse of something beyond"
 category: hardlyrelevant
+volume: v7
 youtube-a: https://youtu.be/DFlozPnTsUM
 download-a: https://drive.google.com/open?id=1QCmWCmJrDA5egI_fmHHzNSQjGeFY-2IX 
 youtube-b: https://youtu.be/qZUjgaPFh9Q 
 download-b: https://drive.google.com/open?id=1eYV_6DgVBgt3AUSsouImWdLPo0-UbtAH
-layout: full-width 
+images: 
+- v7cover.jpg
+layout: two-col 
 ---
 #### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 1. Fazendo Arte -- Egberto Gismonti

@@ -2,11 +2,14 @@
 title: "volume 8 (2/19/18 - 2/25/18): for jacob"
 subtitle: "hardly controversial subseries vol.2: visiting culture friends"
 category: hardlyrelevant
+volume: v8
 youtube-a: https://youtu.be/T9-FZbWcMLg
 download-a: https://drive.google.com/open?id=186dDuoehe4L5_U4TrjeADSNtjz-FVadc
 youtube-b: https://youtu.be/uu8p4fzt-bo
 download-b: https://drive.google.com/open?id=14E_43LKuAk89W7SSYxT2egnXiJt9WORJ 
-layout: full-width 
+images: 
+- v8cover.jpg
+layout: two-col 
 ---
 #### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 1. Look At What Happened -- CE Schneider Topical

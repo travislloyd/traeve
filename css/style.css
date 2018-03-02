@@ -227,10 +227,11 @@ ol {
 }
 #col-container {
   display: flex;
-  margin: 0 -20px;
+  margin: 0 -50px;
 }
 #col2 {
-  width: 300px;
+  min-width: 300px;
+  max-width: 400px;
 }
 #col1 {
   flex: 1;
@@ -240,7 +241,7 @@ ol {
   padding: 5px 0px;
 }
 .col {
-  margin: 0 20px;
+  margin: 0 50px;
 }
 .right-link {
   float: right;

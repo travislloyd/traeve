@@ -2,11 +2,14 @@
 title: "volume 4 (1/22/18 - 1/28/18): for maya"
 subtitle: ready to boogie
 category: hardlyrelevant
+volume: v4
 youtube-a: https://youtu.be/lekEs1WsqG4
 download-a: https://drive.google.com/open?id=1o0ESwsXc865xqThkf-A2t4vQGqpPgRT7
 youtube-b: https://youtu.be/Ol6pYU1BPKo
 download-b: https://drive.google.com/open?id=1-vmhHF7z06xAfjXFv35xdxznJVCXvoUK
-layout: full-width 
+images:
+- v4cover.jpg
+layout: two-col 
 ---
 #### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 1. Stay on it (Program Notes) -- Abdu Ali (composed by Julius Eastman)

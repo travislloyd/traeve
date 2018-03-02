@@ -1,5 +1,5 @@
 ---
-layout: full-width
+layout: full-width 
 ---
 <div id="col-container">
   <div class="col" id="col1">
@@ -9,7 +9,7 @@ layout: full-width
     <a class="right-link" href="/{{ page.category }}#archive">&lt;&lt; Full archive</a> 
     <div class="image-col">
       {% for img in page.images %}
-        <img alt="{{ img }}" class="image-col__img" src="/img/hardlyrelevant/v1/{{ img }}"></img>
+      <img alt="{{ img }}" class="image-col__img" src="/img/{{ page.category }}/{{ page.volume }}/{{ img }}"></img>
       {% endfor %}
     </div>
   </div>
