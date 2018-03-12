@@ -1,0 +1,40 @@
+{
+  "id": "http://traeve.com/hardlyrelevant",
+
+  "definitions": {
+    "track": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "artist": { "type": "string" }
+      },
+      "required": ["title", "artist"]
+    },
+    "side": {
+      "type": "object",
+      "properties": {
+        "downloadLink": { "type": "string" },
+        "streamLink":   { "type": "string" },
+        "tracks": { 
+          "type": "array",
+          "minLength": 1,
+          "items": { "$ref": "#/definitions/track" }
+        }
+      },
+      "required": ["downloadLink", "streamLink", "tracks"]
+    }
+  },
+
+  "type": "object",
+  "properties": {
+    "volume": { "type": "integer" },
+    "subtitle": { "type": "string" },
+    "recipient": { "type": "string" },
+    "emailMsg": { "type": "string" },
+    "facebookMsg": { "type": "string" },
+    "sideA": { "$ref": "#/definitions/side" },
+    "sideB": { "$ref": "#/definitions/side" }
+  },
+  "additionalProperties": false,
+  "required": [ "volume", "subtitle", "recipient", "emailMsg", "facebookMsg", "sideA", "sideB" ]
+}

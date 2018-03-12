@@ -1,0 +1,35 @@
+{
+  "volume": 0,
+  "subtitle": "test subtitle",
+  "recipient": "test recipient",
+  "emailMsg": "test email msg", 
+  "facebookMsg": "test facebook message",
+  "sideA": {
+    "downloadLink": "test download link",
+    "streamLink": "test stream link",
+    "tracks": [
+      { 
+        "title": "test title 1", 
+        "artist": "test artist 1"
+      },
+      {
+        "title": "test title 2",
+        "artist": "test artist 2"
+      }
+    ]
+  },
+  "sideB": {
+    "downloadLink": "test download link 2",
+    "streamLink": "test stream link 2",
+    "tracks": [
+      { 
+        "title": "test title 3", 
+        "artist": "test artist 3"
+      },
+      {
+        "title": "test title 4",
+        "artist": "test artist 4"
+      }
+    ]
+  }
+}

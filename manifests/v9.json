@@ -1,0 +1,55 @@
+{
+  "volume": 9,
+  "subtitle": "the eyes of march",
+  "recipient": "Hannah",
+  "emailMsg": "coming in like a lion, volume 9, 'the eyes of march.'", 
+  "facebookMsg": "good morning to a new month,",
+  "sideA": {
+    "downloadLink": "https://drive.google.com/open?id=1Z1bM051yQLcxOMo-OD_9MEvSdjmaFwbu",
+    "streamLink": "https://youtu.be/DbKYQIPjFbc",
+    "tracks": [
+      { 
+        "title": "Gum Gum", 
+        "artist": "Hailu Mergia"
+      },
+      {
+        "title": "Comunhão",
+        "artist": "Nelson Angelo E Joyce"
+      },
+      {
+        "title": "Intervales Theme",
+        "artist": "Javelin"
+      },
+      {
+        "title": "The Wind",
+        "artist": "Nolan Strong and the Diablos"
+      },
+      {
+        "title": "Live @ The Glove 3/3/18",
+        "artist": "Wendy Eisenberg"
+      }
+    ]
+  },
+  "sideB": {
+    "downloadLink": "https://drive.google.com/open?id=1u7JSsjOXzi66nQrvPlGdanmQmRiAwBTQ",
+    "streamLink": "https://youtu.be/gvY9amBL76I",
+    "tracks": [
+      { 
+        "title": "Flamingo", 
+        "artist": "Kero Kero Bonito"
+      },
+      {
+        "title": "My Sweet Lord",
+        "artist": "George Harrison"
+      },
+      {
+        "title": "Kungo Sogoni",
+        "artist": "Na Hawa Doumbia"
+      },
+      {
+        "title": "Live @ Bitforms Gallery 2/18/18",
+        "artist": "Caroline Park"
+      }
+    ]
+  }
+}
