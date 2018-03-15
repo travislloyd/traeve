@@ -13,6 +13,7 @@
     "side": {
       "type": "object",
       "properties": {
+        "mp3Path": { "type": "string" },
         "downloadLink": { "type": "string" },
         "streamLink":   { "type": "string" },
         "tracks": { 
@@ -21,7 +22,7 @@
           "items": { "$ref": "#/definitions/track" }
         }
       },
-      "required": ["downloadLink", "streamLink", "tracks"]
+      "required": ["mp3Path", "downloadLink", "streamLink", "tracks"]
     }
   },
 

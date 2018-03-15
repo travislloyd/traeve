@@ -1,11 +1,15 @@
 #!/usr/bin/env ruby
 require "json-schema"
 require "json"
+require "taglib"
 
 module Publish
 	SCHEMA_PATH = 'manifests/manifestSchema.json'
 
 	class InvalidManifestError < StandardError
+	end
+
+	class SourceFileError < StandardError
 	end
 
   def self.parse_manifest(path)
@@ -17,19 +21,23 @@ module Publish
 		end
 	end
 
-	def set_mp3_metadata
-		puts "Script starting.  Before editing tags:"
-		result = system 'id3v2 -l fake'
-		puts result
+  def self.write_mp3_metadata(path, volume, recipient, side)
+    puts "Opening mp3 from path = #{path}"
 
-		system 'id3v2 --artist "TRAEVE.COM PRESENTS" \
-					  --album "HARDLY RELEVANT vol. 10" \
-					  --genre "LUDDITE ROCK" \
-					  --song "Vol 10: Lara -- Side A+B" \
-					  sidea+b.mp3'
+    begin
+      TagLib::MPEG::File.open(path) do |file|
+        tag = file.id3v2_tag
 
-		puts "After editing tags:"
-		system 'id3v2 -l sidea+b.mp3' #=> true (prints 'hi')
+        tag.artist = "TRAEVE.COM PRESENTS"
+        tag.album = "HARDLY RELEVANT vol. #{volume}"
+        tag.genre = "LUDDITE ROCK"
+        tag.title = "Vol. #{volume}: #{recipient} -- Side #{side}"
+
+        file.save
+      end  # File is automatically closed at block end
+    rescue Exception => e
+      raise SourceFileError.new e
+    end
 	end
 
 	def generate_mkvs
@@ -64,7 +72,15 @@ module Publish
       manifest = parse_manifest manifest_path
       puts "Manifest parsed successfully!"
 
-#      set_mp3_metadata
+      puts "Writing Side A MP3 metadata..."
+      write_mp3_metadata manifest["sideA"]["mp3Path"], manifest["volume"], manifest["recipient"], :A 
+      puts "Side A MP3 metadata written successfully!"
+
+      puts "Writing Side B MP3 metadata..."
+      write_mp3_metadata manifest["sideB"]["mp3Path"], manifest["volume"], manifest["recipient"], :B 
+      puts "Side B MP3 metadata written successfully!"
+
+      #TODO validate presence of source files (mp3, images...) as a part of parse manifest
 #      generate_mkvs
 #      upload_to_google_drive
 #      upload_to_youtube

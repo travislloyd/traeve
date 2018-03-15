@@ -5,6 +5,7 @@
   "emailMsg": "coming in like a lion, volume 9, 'the eyes of march.'", 
   "facebookMsg": "good morning to a new month,",
   "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v9--hannah/HRv9sideA.mp3", 
     "downloadLink": "https://drive.google.com/open?id=1Z1bM051yQLcxOMo-OD_9MEvSdjmaFwbu",
     "streamLink": "https://youtu.be/DbKYQIPjFbc",
     "tracks": [
@@ -31,6 +32,7 @@
     ]
   },
   "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v9--hannah/HRv9sideB.mp3", 
     "downloadLink": "https://drive.google.com/open?id=1u7JSsjOXzi66nQrvPlGdanmQmRiAwBTQ",
     "streamLink": "https://youtu.be/gvY9amBL76I",
     "tracks": [

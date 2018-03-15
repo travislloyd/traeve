@@ -5,6 +5,7 @@
   "emailMsg": "test email msg", 
   "facebookMsg": "test facebook message",
   "sideA": {
+    "mp3Path": "/Users/travislloyd/Documents/code/personal_sites/traeve_jekyll/spec/fixtures/testmp3/mp3",
     "downloadLink": "test download link",
     "streamLink": "test stream link",
     "tracks": [
@@ -19,6 +20,7 @@
     ]
   },
   "sideB": {
+    "mp3Path": "/Users/travislloyd/Documents/code/personal_sites/traeve_jekyll/spec/fixtures/testmp3/mp3",
     "downloadLink": "test download link 2",
     "streamLink": "test stream link 2",
     "tracks": [
