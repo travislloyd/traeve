@@ -24,6 +24,8 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "json-schema"
 gem "taglib-ruby"
+gem "streamio-ffmpeg"
+
 group :test do
   gem 'rspec', '~> 3.0'
 end

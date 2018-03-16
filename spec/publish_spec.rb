@@ -20,7 +20,7 @@ describe 'publish' do
 
     context "with manifest file that can't be read" do
       it 'raises an InvalidManifestError' do
-        expect { Publish.parse_manifest('spec/fixtures/I_DONT_EXIST') }.to raise_error(Publish::InvalidManifestError)
+        expect { Publish.parse_manifest('spec/fixtures/I_DONT_EXIST') }.to raise_error(Publish::InvalidManifestError) 
       end
     end
   end
@@ -57,6 +57,34 @@ describe 'publish' do
 
       it "throws an exception" do
         expect { Publish.validate_source_files(invalid_files) }.to raise_error(Publish::SourceFileError)
+      end
+    end
+  end
+
+  describe 'generate_video' do
+    let(:mock_transcoder) { double("transcoder") }
+    let(:output_path) { "output/path" }
+    let(:image_path) { "image/path" }
+    let(:mp3_path) { "mp3/path" }
+
+    before do
+      allow(FFMPEG::Transcoder).to receive(:new).and_return(mock_transcoder)
+    end
+                                  
+    context "on normal execution" do
+      it "runs the transcoder" do
+        expect(mock_transcoder).to receive(:run)
+        Publish.generate_video(output_path, image_path, mp3_path)
+      end
+    end
+
+    context "on error" do 
+      before do
+        allow(mock_transcoder).to receive(:run).and_raise("Error")
+      end
+
+      it "throws an Encoding Error" do
+        expect { Publish.generate_video(output_path, image_path, mp3_path) }.to raise_error(Publish::EncodingError)
       end
     end
   end
