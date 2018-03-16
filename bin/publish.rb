@@ -6,6 +6,8 @@ require "streamio-ffmpeg"
 
 module Publish
 	SCHEMA_PATH = 'manifests/manifestSchema.json'
+  BLOG_POST_DIR = "_posts"
+  BLOG_IMG_DIR = "img/hardlyrelevant"
 
 	class InvalidManifestError < StandardError
 	end
@@ -85,16 +87,55 @@ module Publish
 		# not yet implemented
 	end
 
-	def create_jekyll_post
-		# not yet implemented
-	end
-
 	def send_tinyletter_email
 		# not yet implemented
 	end
 
 	def post_to_facebook
 		# not yet implemented
+	end
+
+  def self.create_blog_post(vol:, recipient:, subtitle:, stream_link_a:, stream_link_b:, download_link_a:, download_link_b:, images:, side_a_tracks:, side_b_tracks:)
+    blog_img_base_path = "#{BLOG_IMG_DIR}/v#{vol}"
+    FileUtils.mkdir_p(blog_img_base_path)
+
+    blog_img_paths = images.map do |img|
+      FileUtils.cp(img, blog_img_base_path)
+      blog_img_path = "#{blog_img_base_path}/#{File.basename img}"
+    end
+
+    # Filename dates are of format: "2018-03-11"
+    filename_date_format = "%Y-%m-%d"
+    # Title dates are of format: "M/D/YY"
+    title_date_format = "%_m/%-d/%y"
+
+    post_path = "#{BLOG_POST_DIR}/#{Time.now.strftime(filename_date_format)}-volume-#{vol}-for-#{recipient}.md"
+    
+    # Project started on New Years, so start_date for a given volume can be found by adding 7 days * the number of volumes that have elapsed
+    start_date = Date.new(Time.now().year) + ( (vol.to_i - 1) * 7 )
+    end_date = start_date + 7
+
+    puts "Creating blog post at #{post_path}"
+    File.open(post_path, "w") do |file|
+      file.puts "---"
+      file.puts "title: \"volume #{vol} (#{start_date.strftime(title_date_format)} - #{end_date.strftime(title_date_format)}): for #{recipient.downcase}\""
+      file.puts "subtitle: #{subtitle}"
+      file.puts "category: hardlyrelevant"
+      file.puts "volume: v#{vol}"
+      file.puts "youtube-a: #{stream_link_a}"
+      file.puts "download-a: #{download_link_a}"
+      file.puts "youtube-b: #{stream_link_b}"
+      file.puts "download-b: #{download_link_b}"
+      file.puts "images:"
+      blog_img_paths.each { |image_path| file.puts "- #{image_path}" }
+      file.puts "layout: two-col"
+      file.puts "---"
+      file.puts '#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####'
+      side_a_tracks.each_with_index { |track, ind| file.puts "#{ind}. #{track["title"]} -- #{track["artist"]}" }
+      file.puts 
+      file.puts '#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####'
+      side_b_tracks.each_with_index { |track, ind| file.puts "#{ind}. #{track["title"]} -- #{track["artist"]}" }
+    end
 	end
 
   def self.publish(manifest_path)
@@ -109,6 +150,25 @@ module Publish
       side_a_image_path = manifest["sideA"]["imgPath"]
       side_b_mp3_path = manifest["sideB"]["mp3Path"]
       side_b_image_path = manifest["sideB"]["imgPath"]
+
+      #TODO
+      # - handle single image case
+      # - write tests
+      # - handle exceptions
+      # - clean/dry up
+      puts "\nCreating blog post..."
+      create_blog_post vol: manifest["volume"],
+                       recipient: manifest["recipient"],
+                       subtitle: manifest["subtitle"],
+                       stream_link_a: manifest["sideA"]["streamLink"],
+                       download_link_a: manifest["sideA"]["downloadLink"],
+                       stream_link_b: manifest["sideB"]["streamLink"],
+                       download_link_b: manifest["sideB"]["downloadLink"],
+                       side_a_tracks: manifest["sideA"]["tracks"],
+                       side_b_tracks: manifest["sideB"]["tracks"],
+                       images: [ manifest["sideA"]["imgPath"], manifest["sideB"]["imgPath"] ]
+
+      puts "Blog post successfully created!"
 
       files = [ side_a_mp3_path,
                 side_a_image_path,
@@ -148,7 +208,6 @@ module Publish
 
 #      upload_to_google_drive
 #      upload_to_youtube
-#      create_jekyll_post
 #      send_tinyletter_email
 #      post_to_facebook
 
