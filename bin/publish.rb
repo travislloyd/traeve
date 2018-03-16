@@ -21,6 +21,14 @@ module Publish
 		end
 	end
 
+  def self.validate_source_files(files)
+    files.each do |file|
+      unless File.exists?(file) && File.readable?(file) && File.writable?(file) 
+        raise SourceFileError.new "Error with file at path=#{file}.  Please verify that this file exists and public read and write permissions have been granted."
+      end
+    end
+  end
+
   def self.write_mp3_metadata(path, volume, recipient, side)
     puts "Opening mp3 from path = #{path}"
 
@@ -72,6 +80,11 @@ module Publish
       manifest = parse_manifest manifest_path
       puts "Manifest parsed successfully!"
 
+      files = [ manifest["sideA"]["mp3Path"], manifest["sideB"]["mp3Path"] ]
+      puts "Validating source files"
+      validate_source_files files 
+      puts "Source files are valid!"
+
       puts "Writing Side A MP3 metadata..."
       write_mp3_metadata manifest["sideA"]["mp3Path"], manifest["volume"], manifest["recipient"], :A 
       puts "Side A MP3 metadata written successfully!"
@@ -80,7 +93,6 @@ module Publish
       write_mp3_metadata manifest["sideB"]["mp3Path"], manifest["volume"], manifest["recipient"], :B 
       puts "Side B MP3 metadata written successfully!"
 
-      #TODO validate presence of source files (mp3, images...) as a part of parse manifest
 #      generate_mkvs
 #      upload_to_google_drive
 #      upload_to_youtube

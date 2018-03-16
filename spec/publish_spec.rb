@@ -25,6 +25,42 @@ describe 'publish' do
     end
   end
 
+  describe 'validate_source_files' do
+    let(:valid_path1) { "testValidPath1" }
+    let(:valid_path2) { "testValidPath2" }
+    let(:invalid_path) { "testInvalidPath" }
+    let(:valid_files) { [valid_path1, valid_path2]}
+    let(:invalid_files) { [valid_path1, invalid_path]}
+
+    context "when given valid files" do
+      before do 
+        expect(File).to receive(:exists?).with(valid_path1).and_return(true)
+        expect(File).to receive(:exists?).with(valid_path2).and_return(true)
+        expect(File).to receive(:readable?).with(valid_path1).and_return(true)
+        expect(File).to receive(:readable?).with(valid_path2).and_return(true)
+        expect(File).to receive(:writable?).with(valid_path1).and_return(true)
+        expect(File).to receive(:writable?).with(valid_path2).and_return(true)
+      end
+
+      it "checks their permissions and returns" do
+        Publish.validate_source_files(valid_files)
+      end
+    end
+
+    context "when given an invalid file" do
+      before do 
+        expect(File).to receive(:exists?).with(valid_path1).and_return(true)
+        expect(File).to receive(:readable?).with(valid_path1).and_return(true)
+        expect(File).to receive(:writable?).with(valid_path1).and_return(true)
+        expect(File).to receive(:exists?).with(invalid_path).and_return(false)
+      end
+
+      it "throws an exception" do
+        expect { Publish.validate_source_files(invalid_files) }.to raise_error(Publish::SourceFileError)
+      end
+    end
+  end
+
   describe 'write_mp3_metadata' do
     let(:valid_mp3_path) { "spec/fixtures/testmp3.mp3" }
     let(:invalid_mp3_path) { "spec/fixtures/MADE_UP_PATH.mp3" }
