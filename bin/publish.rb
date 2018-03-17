@@ -3,11 +3,13 @@ require "json-schema"
 require "json"
 require "taglib"
 require "streamio-ffmpeg"
+require "google_drive"
 
 module Publish
 	SCHEMA_PATH = 'manifests/manifestSchema.json'
   BLOG_POST_DIR = "_posts"
   BLOG_IMG_DIR = "img/hardlyrelevant"
+  GDRIVE_CONFIG = "config/gdrive.json"
 
 	class InvalidManifestError < StandardError
 	end
@@ -16,6 +18,9 @@ module Publish
 	end
 
 	class EncodingError < StandardError
+	end
+
+	class ExternalDependencyError < StandardError
 	end
 
   def self.parse_manifest(path)
@@ -79,8 +84,38 @@ module Publish
     end
 	end
 
-	def upload_to_google_drive
-		# not yet implemented
+  def self.upload_mp3s_to_google_drive(mp3_path_A, mp3_path_B, volume)
+    begin
+      # Creates a session. This will prompt the credential via command line for the
+      # first time and save it to config.json file for later usages.
+      # See this document to learn how to create config.json:
+      # https://github.com/gimite/google-drive-ruby/blob/master/doc/authorization.md
+      session = GoogleDrive::Session.from_config(GDRIVE_CONFIG)
+
+      # Create folders
+      hr_folder = session.collection_by_title("HARDLYRELEVANT")
+      volume_folder = hr_folder.subcollection_by_title("v#{volume}")
+      unless volume_folder
+        puts "Creating v#{volume} folder..."
+        volume_folder = hr_folder.create_subcollection("v#{volume}") 
+      end
+      
+      # Upload files
+      puts "Uploading Side A mp3..."
+      side_a_file = volume_folder.upload_from_file(mp3_path_A, File.basename(mp3_path_A), convert: false)
+      puts "Uploading Side B mp3..."
+      side_b_file = volume_folder.upload_from_file(mp3_path_B, File.basename(mp3_path_B), convert: false)
+
+      # Set public read permissions
+      puts "Setting Side A permissions..."
+      side_a_file.acl.push({type: "anyone", allow_file_discovery: false, role: "reader"})
+      puts "Setting Side B permissions..."
+      side_b_file.acl.push({type: "anyone", allow_file_discovery: false, role: "reader"})
+
+      return side_a_file.human_url, side_b_file.human_url
+    rescue StandardError => e
+      raise ExternalDependencyError.new e
+    end
 	end
 
 	def upload_to_youtube
@@ -151,21 +186,6 @@ module Publish
       side_b_mp3_path = manifest["sideB"]["mp3Path"]
       side_b_image_path = manifest["sideB"]["imgPath"]
 
-      puts "\nCreating blog post..."
-      images = [ side_a_image_path ]
-      images.push side_b_image_path unless side_a_image_path == side_b_image_path
-      create_blog_post vol: manifest["volume"],
-                       recipient: manifest["recipient"],
-                       subtitle: manifest["subtitle"],
-                       stream_link_a: manifest["sideA"]["streamLink"],
-                       download_link_a: manifest["sideA"]["downloadLink"],
-                       stream_link_b: manifest["sideB"]["streamLink"],
-                       download_link_b: manifest["sideB"]["downloadLink"],
-                       side_a_tracks: manifest["sideA"]["tracks"],
-                       side_b_tracks: manifest["sideB"]["tracks"],
-                       images: images
-
-      puts "Blog post successfully created!"
 
       files = [ side_a_mp3_path,
                 side_a_image_path,
@@ -189,6 +209,10 @@ module Publish
                          :B 
       puts "Side B MP3 metadata written successfully!"
 
+      puts "\nUploading MP3s to Google Drive..."
+      side_a_download_url, side_b_download_url = upload_mp3s_to_google_drive side_a_mp3_path, side_b_mp3_path, manifest["volume"]
+      puts "MP3s uploaded to Google Drive successfully! Side A URL: #{side_a_download_url}, Side B URL: #{side_b_download_url}"
+
       puts "\nGenerating .mkv for Side A..."
       side_a_mkv_path = manifest["outputDir"] + "HRv#{manifest["volume"]}sideA.mkv"
       generate_video side_a_mkv_path,
@@ -203,7 +227,22 @@ module Publish
                      side_b_mp3_path
       puts "Side B .mkv created successfully at path=#{side_b_mkv_path}"
 
-#      upload_to_google_drive
+      puts "\nCreating blog post..."
+      images = [ side_a_image_path ]
+      images.push side_b_image_path unless side_a_image_path == side_b_image_path
+      create_blog_post vol: manifest["volume"],
+                       recipient: manifest["recipient"],
+                       subtitle: manifest["subtitle"],
+                       stream_link_a: manifest["sideA"]["streamLink"],
+                       download_link_a: manifest["sideA"]["downloadLink"],
+                       stream_link_b: manifest["sideB"]["streamLink"],
+                       download_link_b: manifest["sideB"]["downloadLink"],
+                       side_a_tracks: manifest["sideA"]["tracks"],
+                       side_b_tracks: manifest["sideB"]["tracks"],
+                       images: images
+
+      puts "Blog post successfully created!"
+
 #      upload_to_youtube
 #      send_tinyletter_email
 #      post_to_facebook
@@ -214,6 +253,9 @@ module Publish
       exit(1)
     rescue EncodingError => e
       STDERR.puts "There was an error encoding a movie file.  The publish workflow is aborting.  See the error message below for more information.\n#{e.message}"
+      exit(1)
+    rescue ExternalDependencyError => e
+      STDERR.puts "There was an error with an external dependency.  The publish workflow is aborting.  See the error message below for more information.\n#{e.message}"
       exit(1)
     rescue StandardError => e
       STDERR.puts e.message

@@ -15,6 +15,8 @@ describe 'publish' do
   let(:side_b_tracks) { [ { "artist": "artist_3", "title": "title 3" },
                           { "artist": "artist 4", "title": "title 4" }] }
   let(:images) { [ "/test/img/1.jpg", "/test/img/2.jpg" ]} 
+  let(:valid_path1) { "testValidPath1" }
+  let(:valid_path2) { "testValidPath2" }
 
   describe 'parse_manifest' do
     context 'with valid manifest file' do
@@ -38,8 +40,6 @@ describe 'publish' do
   end
 
   describe 'validate_source_files' do
-    let(:valid_path1) { "testValidPath1" }
-    let(:valid_path2) { "testValidPath2" }
     let(:invalid_path) { "testInvalidPath" }
     let(:valid_files) { [valid_path1, valid_path2]}
     let(:invalid_files) { [valid_path1, invalid_path]}
@@ -175,6 +175,62 @@ describe 'publish' do
                                           side_b_tracks: side_b_tracks,
                                           images: images
         }.to raise_error(StandardError)
+      end
+    end
+  end
+
+  describe 'upload_mp3s_to_google_drive' do
+    let(:mock_session) { double("session") }
+    let(:mock_hr_folder) { double("hr_folder") }
+    let(:mock_volume_folder) { double("volume_folder") }
+    let(:mock_file_1) { double("file_1") }
+    let(:mock_file_2) { double("file_2") }
+
+    context 'normal execution' do
+      before do
+        expect(GoogleDrive::Session).to receive(:from_config).and_return(mock_session)
+        allow(mock_session).to receive(:collection_by_title).and_return mock_hr_folder
+        allow(mock_volume_folder).to receive(:upload_from_file).with(valid_path1, valid_path1, hash_including(:convert => false)).and_return mock_file_1
+        allow(mock_volume_folder).to receive(:upload_from_file).with(valid_path2, valid_path2, hash_including(:convert => false)).and_return mock_file_2
+        allow(mock_file_1).to receive(:acl).and_return []
+        allow(mock_file_2).to receive(:acl).and_return []
+        allow(mock_file_1).to receive(:human_url).and_return download_link_a
+        allow(mock_file_2).to receive(:human_url).and_return download_link_b
+      end
+
+      context 'when subfolder already exists' do
+        before do
+          allow(mock_hr_folder).to receive(:subcollection_by_title).and_return mock_volume_folder
+        end
+
+        it "uploads without creating a new subfolder" do
+          link_1, link_2 = Publish.upload_mp3s_to_google_drive valid_path1, valid_path2, vol_num
+          expect(link_1).to eq(download_link_a)
+          expect(link_2).to eq(download_link_b)
+        end
+      end
+
+      context 'when subfolder does not exist' do
+        before do
+          allow(mock_hr_folder).to receive(:subcollection_by_title).and_return nil
+          allow(mock_hr_folder).to receive(:create_subcollection).and_return mock_volume_folder
+        end
+
+        it "creates a new subfolder and then uploads to it" do
+          link_1, link_2 = Publish.upload_mp3s_to_google_drive valid_path1, valid_path2, vol_num
+          expect(link_1).to eq(download_link_a)
+          expect(link_2).to eq(download_link_b)
+        end
+      end
+    end
+
+    context 'on error' do
+      before do
+        expect(GoogleDrive::Session).to receive(:from_config).and_raise(StandardError)
+      end
+
+      it "throws an ExternalDependencyError" do
+        expect { Publish.upload_mp3s_to_google_drive(valid_path1, valid_path2, vol_num) }.to raise_error(Publish::ExternalDependencyError)
       end
     end
   end
