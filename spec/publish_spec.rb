@@ -3,6 +3,18 @@ require "taglib"
 
 describe 'publish' do
   let(:valid_manifest) { JSON::parse(File.read('spec/fixtures/valid_manifest.json')) }
+  let(:vol_num) { 99 }
+  let(:recipient) { "testRecipient" }
+  let(:subtitle) { "test subtitle" }
+  let(:stream_link_a) { "stream link a" }
+  let(:stream_link_b) { "stream_link_b" }
+  let(:download_link_a) { "download_link_a" }
+  let(:download_link_b) { "download_link_b" }
+  let(:side_a_tracks) { [ { "artist": "artist_1", "title": "title 1" },
+                          { "artist": "artist 2", "title": "title 2" }] }
+  let(:side_b_tracks) { [ { "artist": "artist_3", "title": "title 3" },
+                          { "artist": "artist 4", "title": "title 4" }] }
+  let(:images) { [ "/test/img/1.jpg", "/test/img/2.jpg" ]} 
 
   describe 'parse_manifest' do
     context 'with valid manifest file' do
@@ -92,8 +104,6 @@ describe 'publish' do
   describe 'write_mp3_metadata' do
     let(:valid_mp3_path) { "spec/fixtures/testmp3.mp3" }
     let(:invalid_mp3_path) { "spec/fixtures/MADE_UP_PATH.mp3" }
-    let(:vol_num) { 99 }
-    let(:recipient) { "testRecipient" }
     let(:side) { "Z" }
     let(:expected_artist) { "TRAEVE.COM PRESENTS" }
     let(:expected_genre) { "LUDDITE ROCK" }
@@ -121,6 +131,50 @@ describe 'publish' do
     context 'when file is invalid' do
       it 'throws an invalid manifest exception' do
         expect { Publish.write_mp3_metadata(invalid_mp3_path, vol_num, recipient, side) }.to raise_error(Publish::SourceFileError)
+      end
+    end
+  end
+
+  describe "create_blog_post" do
+    context "when inputs are valid" do
+      before do 
+        expect(FileUtils).to receive(:mkdir_p)
+        expect(FileUtils).to receive(:cp).twice
+        expect(File).to receive(:basename).twice
+        expect(File).to receive(:open)
+      end
+
+      it "creates a file containing the provided input" do
+        Publish.create_blog_post vol: vol_num,
+                                 recipient: recipient,
+                                 subtitle: subtitle,
+                                 stream_link_a: stream_link_a,
+                                 stream_link_b: stream_link_b,
+                                 download_link_a: download_link_a,
+                                 download_link_b: download_link_b,
+                                 side_a_tracks: side_a_tracks,
+                                 side_b_tracks: side_b_tracks,
+                                 images: images
+      end
+    end
+
+    context "when an error occurs" do
+      before do 
+        expect(FileUtils).to receive(:mkdir_p).and_raise(StandardError)
+      end
+
+      it "throws the error" do
+        expect { Publish.create_blog_post vol: vol_num,
+                                          recipient: recipient,
+                                          subtitle: subtitle,
+                                          stream_link_a: stream_link_a,
+                                          stream_link_b: stream_link_b,
+                                          download_link_a: download_link_a,
+                                          download_link_b: download_link_b,
+                                          side_a_tracks: side_a_tracks,
+                                          side_b_tracks: side_b_tracks,
+                                          images: images
+        }.to raise_error(StandardError)
       end
     end
   end

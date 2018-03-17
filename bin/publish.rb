@@ -101,7 +101,7 @@ module Publish
 
     blog_img_paths = images.map do |img|
       FileUtils.cp(img, blog_img_base_path)
-      blog_img_path = "#{blog_img_base_path}/#{File.basename img}"
+      blog_img_path = File.basename img
     end
 
     # Filename dates are of format: "2018-03-11"
@@ -151,12 +151,9 @@ module Publish
       side_b_mp3_path = manifest["sideB"]["mp3Path"]
       side_b_image_path = manifest["sideB"]["imgPath"]
 
-      #TODO
-      # - handle single image case
-      # - write tests
-      # - handle exceptions
-      # - clean/dry up
       puts "\nCreating blog post..."
+      images = [ side_a_image_path ]
+      images.push side_b_image_path unless side_a_image_path == side_b_image_path
       create_blog_post vol: manifest["volume"],
                        recipient: manifest["recipient"],
                        subtitle: manifest["subtitle"],
@@ -166,7 +163,7 @@ module Publish
                        download_link_b: manifest["sideB"]["downloadLink"],
                        side_a_tracks: manifest["sideA"]["tracks"],
                        side_b_tracks: manifest["sideB"]["tracks"],
-                       images: [ manifest["sideA"]["imgPath"], manifest["sideB"]["imgPath"] ]
+                       images: images
 
       puts "Blog post successfully created!"
 
