@@ -4,12 +4,22 @@ require "json"
 require "taglib"
 require "streamio-ffmpeg"
 require "google_drive"
+require_relative 'youtube'
 
+# TODO
+# -- specify versions in gemfile
+# -- clean up code for DRY and readablility
+# -- ruby style check
 module Publish
 	SCHEMA_PATH = 'manifests/manifestSchema.json'
   BLOG_POST_DIR = "_posts"
   BLOG_IMG_DIR = "img/hardlyrelevant"
-  GDRIVE_CONFIG = "config/gdrive.json"
+  GOOGLE_API_CONFIG = "config/google.json"
+  GOOGLE_API_SCOPE = [
+    'https://www.googleapis.com/auth/drive',
+    'https://spreadsheets.google.com/feeds/',
+    'https://www.googleapis.com/auth/youtube.upload'
+  ]
 
 	class InvalidManifestError < StandardError
 	end
@@ -87,10 +97,10 @@ module Publish
   def self.upload_mp3s_to_google_drive(mp3_path_A, mp3_path_B, volume)
     begin
       # Creates a session. This will prompt the credential via command line for the
-      # first time and save it to config.json file for later usages.
+      # first time and save it to the GOOGLE_API_CONFIG file for later usages.
       # See this document to learn how to create config.json:
       # https://github.com/gimite/google-drive-ruby/blob/master/doc/authorization.md
-      session = GoogleDrive::Session.from_config(GDRIVE_CONFIG)
+      session = GoogleDrive::Session.from_config(GOOGLE_API_CONFIG, scope: GOOGLE_API_SCOPE)
 
       # Create folders
       hr_folder = session.collection_by_title("HARDLYRELEVANT")
@@ -117,9 +127,63 @@ module Publish
       raise ExternalDependencyError.new e
     end
 	end
+  
+  def self.upload_videos_to_youtube(side_a_path, side_b_path, manifest)
+    puts "\nCreating playlist..."
+    playlist_id = create_playlist "Hardly Relevant Vol.#{manifest["volume"]}", "private"
+    puts "Playlist with id=#{playlist_id} created successfully!"
+    puts 
 
-	def upload_to_youtube
-		# not yet implemented
+    side_a_id = upload_to_youtube path: side_a_path,
+                                  vol: manifest["volume"],
+                                  subtitle: manifest["subtitle"],
+                                  recipient: manifest["recipient"],
+                                  side: "A",
+                                  dl_link: manifest["sideA"]["downloadLink"],
+                                  tracks: manifest["sideA"]["tracks"]
+
+    side_b_id = upload_to_youtube path: side_b_path,
+                                  vol: manifest["volume"],
+                                  subtitle: manifest["subtitle"],
+                                  recipient: manifest["recipient"],
+                                  side: "B",
+                                  dl_link: manifest["sideB"]["downloadLink"],
+                                  tracks: manifest["sideB"]["tracks"]
+
+    puts "\nAdding Side A to playlist..."
+    add_to_playlist(playlist_id, side_a_id)
+    puts "Successfully added Side A to playlist!"
+
+    puts "Adding Side B to playlist..."
+    add_to_playlist(playlist_id, side_b_id)
+    puts "Successfully added Side B to playlist!"
+
+    return "https://youtu.be/#{side_a_id}", "https://youtu.be/#{side_b_id}"
+  end
+
+  def self.upload_to_youtube(path:, vol:, subtitle:, recipient:, side:, dl_link:, tracks:)
+    description_string = "Hardly Relevant (http://traeve.com/hardlyrelevant)\n" +
+                         "Volume #{vol} (#{daterange_string_from_vol_num(vol)})\n"+
+                         "#{subtitle}\n" +
+                         "For #{recipient}\n" +
+                         "Side #{side}\n" +
+                         "\n" +
+                         "Download link: #{dl_link}\n" +
+                         "\n" +
+                         "Track Listing:\n" +
+                         tracks.reduce("") { |memo, track| memo + "\n#{track["title"]} -- #{track["artist"]}" }
+    title_string = "Hardly Relevant Vol.#{vol}: For #{recipient} (Side #{side})"
+
+    puts "Uploading #{title_string}...."
+    response = upload path,
+                          title_string,
+                          description_string,
+                          10, # music
+                          "Hardly Relevant",
+                          "private"
+    puts "#{title_string} successfuly uploaded with ID=#{response.id}!"
+
+    return response.id
 	end
 
 	def send_tinyletter_email
@@ -129,6 +193,16 @@ module Publish
 	def post_to_facebook
 		# not yet implemented
 	end
+
+  def self.daterange_string_from_vol_num(vol_num)
+    # Project started on New Years, so start_date for a given volume can be found by adding 7 days * the number of volumes that have elapsed
+    start_date = Date.new(Time.now().year) + ( (vol_num.to_i - 1) * 7 )
+    end_date = start_date + 7
+    
+    # Title dates are of format: "M/D/YY"
+    title_date_format = "%_m/%-d/%y"
+    "#{start_date.strftime(title_date_format)} - #{end_date.strftime(title_date_format)}"
+  end
 
   def self.create_blog_post(vol:, recipient:, subtitle:, stream_link_a:, stream_link_b:, download_link_a:, download_link_b:, images:, side_a_tracks:, side_b_tracks:)
     blog_img_base_path = "#{BLOG_IMG_DIR}/v#{vol}"
@@ -141,19 +215,12 @@ module Publish
 
     # Filename dates are of format: "2018-03-11"
     filename_date_format = "%Y-%m-%d"
-    # Title dates are of format: "M/D/YY"
-    title_date_format = "%_m/%-d/%y"
-
     post_path = "#{BLOG_POST_DIR}/#{Time.now.strftime(filename_date_format)}-volume-#{vol}-for-#{recipient}.md"
-    
-    # Project started on New Years, so start_date for a given volume can be found by adding 7 days * the number of volumes that have elapsed
-    start_date = Date.new(Time.now().year) + ( (vol.to_i - 1) * 7 )
-    end_date = start_date + 7
 
     puts "Creating blog post at #{post_path}"
     File.open(post_path, "w") do |file|
       file.puts "---"
-      file.puts "title: \"volume #{vol} (#{start_date.strftime(title_date_format)} - #{end_date.strftime(title_date_format)}): for #{recipient.downcase}\""
+      file.puts "title: \"volume #{vol} (#{daterange_string_from_vol_num(vol)}): for #{recipient.downcase}\""
       file.puts "subtitle: #{subtitle}"
       file.puts "category: hardlyrelevant"
       file.puts "volume: v#{vol}"
@@ -186,7 +253,6 @@ module Publish
       side_b_mp3_path = manifest["sideB"]["mp3Path"]
       side_b_image_path = manifest["sideB"]["imgPath"]
 
-
       files = [ side_a_mp3_path,
                 side_a_image_path,
                 side_b_mp3_path,
@@ -209,10 +275,6 @@ module Publish
                          :B 
       puts "Side B MP3 metadata written successfully!"
 
-      puts "\nUploading MP3s to Google Drive..."
-      side_a_download_url, side_b_download_url = upload_mp3s_to_google_drive side_a_mp3_path, side_b_mp3_path, manifest["volume"]
-      puts "MP3s uploaded to Google Drive successfully! Side A URL: #{side_a_download_url}, Side B URL: #{side_b_download_url}"
-
       puts "\nGenerating .mkv for Side A..."
       side_a_mkv_path = manifest["outputDir"] + "HRv#{manifest["volume"]}sideA.mkv"
       generate_video side_a_mkv_path,
@@ -227,23 +289,31 @@ module Publish
                      side_b_mp3_path
       puts "Side B .mkv created successfully at path=#{side_b_mkv_path}"
 
+      puts "\nUploading MP3s to Google Drive..."
+      side_a_download_url, side_b_download_url = upload_mp3s_to_google_drive side_a_mp3_path, side_b_mp3_path, manifest["volume"]
+      puts "MP3s uploaded to Google Drive successfully! Side A URL: #{side_a_download_url}, Side B URL: #{side_b_download_url}"
+
+      puts "\nUploading Videos to Youtube..."
+      test_path = "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v9--hannah/HRv99sideA.mkv"
+      side_a_stream_url, side_b_stream_url = upload_videos_to_youtube(side_a_mkv_path, side_b_mkv_path, manifest)
+      puts "\nVideos uploaded to Youtube successfully!"
+
       puts "\nCreating blog post..."
       images = [ side_a_image_path ]
       images.push side_b_image_path unless side_a_image_path == side_b_image_path
       create_blog_post vol: manifest["volume"],
                        recipient: manifest["recipient"],
                        subtitle: manifest["subtitle"],
-                       stream_link_a: manifest["sideA"]["streamLink"],
-                       download_link_a: manifest["sideA"]["downloadLink"],
-                       stream_link_b: manifest["sideB"]["streamLink"],
-                       download_link_b: manifest["sideB"]["downloadLink"],
+                       stream_link_a: side_a_stream_url,
+                       download_link_a: side_a_download_url,
+                       stream_link_b: side_b_stream_url, 
+                       download_link_b: side_b_download_url, 
                        side_a_tracks: manifest["sideA"]["tracks"],
                        side_b_tracks: manifest["sideB"]["tracks"],
                        images: images
 
       puts "Blog post successfully created!"
 
-#      upload_to_youtube
 #      send_tinyletter_email
 #      post_to_facebook
 
