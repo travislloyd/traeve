@@ -1,44 +1,6 @@
-require_relative '../bin/publish'
-require "taglib"
+require_relative '../lib/publish_utils'
 
-describe 'publish' do
-  let(:valid_manifest) { JSON::parse(File.read('spec/fixtures/valid_manifest.json')) }
-  let(:vol_num) { 99 }
-  let(:recipient) { "testRecipient" }
-  let(:subtitle) { "test subtitle" }
-  let(:stream_link_a) { "stream link a" }
-  let(:stream_link_b) { "stream_link_b" }
-  let(:download_link_a) { "download_link_a" }
-  let(:download_link_b) { "download_link_b" }
-  let(:side_a_tracks) { [ { "artist": "artist_1", "title": "title 1" },
-                          { "artist": "artist 2", "title": "title 2" }] }
-  let(:side_b_tracks) { [ { "artist": "artist_3", "title": "title 3" },
-                          { "artist": "artist 4", "title": "title 4" }] }
-  let(:images) { [ "/test/img/1.jpg", "/test/img/2.jpg" ]} 
-  let(:valid_path1) { "testValidPath1" }
-  let(:valid_path2) { "testValidPath2" }
-
-  describe 'parse_manifest' do
-    context 'with valid manifest file' do
-      it 'returns a json object representation of the manifest' do
-        output = Publish.parse_manifest('spec/fixtures/valid_manifest.json')
-        expect(output).to eq valid_manifest 
-      end
-    end
-
-    context "with manifest file that doesn't match schema" do
-      it 'raises an InvalidManifestError' do
-        expect { Publish.parse_manifest('spec/fixtures/invalid_manifest.json') }.to raise_error(Publish::InvalidManifestError)
-      end
-    end
-
-    context "with manifest file that can't be read" do
-      it 'raises an InvalidManifestError' do
-        expect { Publish.parse_manifest('spec/fixtures/I_DONT_EXIST') }.to raise_error(Publish::InvalidManifestError) 
-      end
-    end
-  end
-
+describe 'PublishUtils' do
   describe 'validate_source_files' do
     let(:invalid_path) { "testInvalidPath" }
     let(:valid_files) { [valid_path1, valid_path2]}
@@ -234,4 +196,6 @@ describe 'publish' do
       end
     end
   end
+
+
 end

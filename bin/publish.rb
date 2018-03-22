@@ -10,6 +10,8 @@ class ManifestPublisher
 
   InvalidManifestError = Class.new(StandardError)
 
+  attr_reader :volume, :recipient, :subtitle
+
   def initialize(manifest_path)
     parse_manifest manifest_path
   end

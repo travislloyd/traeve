@@ -3,8 +3,6 @@
   "outputDir": "spec/output",
   "subtitle": "test subtitle",
   "recipient": "test recipient",
-  "emailMsg": "test email msg", 
-  "facebookMsg": "test facebook message",
   "sideA": {
     "mp3Path": "/Users/travislloyd/Documents/code/personal_sites/traeve_jekyll/spec/fixtures/testmp3/mp3",
     "imgPath": "/Users/travislloyd/Documents/code/personal_sites/traeve_jekyll/spec/fixtures/testmp3/cover.jpg",
