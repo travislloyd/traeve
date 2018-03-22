@@ -1,5 +1,3 @@
-require 'rubygems'
-gem 'google-api-client', '>0.7'
 require 'google/apis'
 require 'google/apis/youtube_v3'
 require 'googleauth'
@@ -12,7 +10,7 @@ module YoutubeClient
   APPLICATION_NAME = 'Hardly Relevant Command Line Publisher'
   CLIENT_SECRETS_PATH = 'config/youtube_secret.json'
   CREDENTIALS_PATH = File.join(Dir.home, '.credentials',
-                               "youtube-quickstart-ruby-credentials.yaml")
+                               "hr-uploader-youtube-credentials.yaml")
   SCOPE = "https://www.googleapis.com/auth/youtube"
 
   YoutubeError = Class.new(StandardError)
@@ -99,7 +97,7 @@ module YoutubeClient
     user_id = 'default'
     credentials = authorizer.get_credentials user_id
     if credentials.nil?
-      url = authorizer.get_authorization_ur base_url: REDIRECT_URI
+      url = authorizer.get_authorization_url base_url: REDIRECT_URI
       puts "Open the following URL in the browser and enter the " +
            "resulting code after authorization"
       puts url
