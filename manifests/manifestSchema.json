@@ -15,15 +15,13 @@
       "properties": {
         "mp3Path": { "type": "string" },
         "imgPath": { "type": "string" },
-        "downloadLink": { "type": "string" },
-        "streamLink":   { "type": "string" },
         "tracks": { 
           "type": "array",
           "minLength": 1,
           "items": { "$ref": "#/definitions/track" }
         }
       },
-      "required": ["imgPath", "mp3Path", "downloadLink", "streamLink", "tracks"]
+      "required": ["imgPath", "mp3Path", "tracks"]
     }
   },
 
@@ -32,12 +30,10 @@
     "volume": { "type": "integer" },
     "subtitle": { "type": "string" },
     "recipient": { "type": "string" },
-    "emailMsg": { "type": "string" },
-    "facebookMsg": { "type": "string" },
     "outputDir": { "type": "string"},
     "sideA": { "$ref": "#/definitions/side" },
     "sideB": { "$ref": "#/definitions/side" }
   },
   "additionalProperties": false,
-  "required": [ "volume", "subtitle", "recipient", "emailMsg", "facebookMsg", "outputDir", "sideA", "sideB" ]
+  "required": [ "volume", "subtitle", "recipient", "outputDir", "sideA", "sideB" ]
 }
