@@ -1,10 +1,18 @@
 require_relative '../lib/publish_utils'
 
 describe 'PublishUtils' do
+  let(:vol_num) { "00" }
+  let(:recipient) { "testRecipient" }
+  let(:subtitle) { "test subtitle" }
+  let(:invalid_path) { "testInvalidPath" }
+  let(:valid_path1) { "testValidPath1" }
+  let(:valid_path2) { "testValidPath2" }
+  let(:valid_files) { [valid_path1, valid_path2]}
+  let(:invalid_files) { [valid_path1, invalid_path]}
+  let(:download_link_a) { "download_link_a" }
+  let(:download_link_b) { "download_link_b" }
+
   describe 'validate_source_files' do
-    let(:invalid_path) { "testInvalidPath" }
-    let(:valid_files) { [valid_path1, valid_path2]}
-    let(:invalid_files) { [valid_path1, invalid_path]}
 
     context "when given valid files" do
       before do 
@@ -17,7 +25,7 @@ describe 'PublishUtils' do
       end
 
       it "checks their permissions and returns" do
-        Publish.validate_source_files(valid_files)
+        PublishUtils::validate_source_files(valid_files)
       end
     end
 
@@ -30,7 +38,7 @@ describe 'PublishUtils' do
       end
 
       it "throws an exception" do
-        expect { Publish.validate_source_files(invalid_files) }.to raise_error(Publish::SourceFileError)
+        expect { PublishUtils::validate_source_files(invalid_files) }.to raise_error(PublishUtils::SourceFileError)
       end
     end
   end
@@ -48,7 +56,7 @@ describe 'PublishUtils' do
     context "on normal execution" do
       it "runs the transcoder" do
         expect(mock_transcoder).to receive(:run)
-        Publish.generate_video(output_path, image_path, mp3_path)
+        PublishUtils::generate_video(output_path, image_path, mp3_path)
       end
     end
 
@@ -58,7 +66,7 @@ describe 'PublishUtils' do
       end
 
       it "throws an Encoding Error" do
-        expect { Publish.generate_video(output_path, image_path, mp3_path) }.to raise_error(Publish::EncodingError)
+        expect { PublishUtils::generate_video(output_path, image_path, mp3_path) }.to raise_error(PublishUtils::EncodingError)
       end
     end
   end
@@ -78,7 +86,7 @@ describe 'PublishUtils' do
       }
 
       it 'sets the artist, album, genre, and title tags of a file' do
-        Publish.write_mp3_metadata(valid_mp3_path, vol_num, recipient, side)
+        PublishUtils::write_mp3_metadata(valid_mp3_path, vol_num, recipient, side)
 
         TagLib::MPEG::File.open(valid_mp3_path) do |file|
           tag = file.id3v2_tag
@@ -92,12 +100,20 @@ describe 'PublishUtils' do
 
     context 'when file is invalid' do
       it 'throws an invalid manifest exception' do
-        expect { Publish.write_mp3_metadata(invalid_mp3_path, vol_num, recipient, side) }.to raise_error(Publish::SourceFileError)
+        expect { PublishUtils.write_mp3_metadata(invalid_mp3_path, vol_num, recipient, side) }.to raise_error(PublishUtils::SourceFileError)
       end
     end
   end
 
   describe "create_blog_post" do
+    let(:stream_link_a) { "stream link a" }
+    let(:stream_link_b) { "stream_link_b" }
+    let(:side_a_tracks) { [ { "artist": "artist_1", "title": "title 1" },
+                            { "artist": "artist 2", "title": "title 2" }] }
+    let(:side_b_tracks) { [ { "artist": "artist_3", "title": "title 3" },
+                            { "artist": "artist 4", "title": "title 4" }] }
+    let(:images) { [ "/test/img/1.jpg", "/test/img/2.jpg" ]} 
+
     context "when inputs are valid" do
       before do 
         expect(FileUtils).to receive(:mkdir_p)
@@ -107,16 +123,16 @@ describe 'PublishUtils' do
       end
 
       it "creates a file containing the provided input" do
-        Publish.create_blog_post vol: vol_num,
-                                 recipient: recipient,
-                                 subtitle: subtitle,
-                                 stream_link_a: stream_link_a,
-                                 stream_link_b: stream_link_b,
-                                 download_link_a: download_link_a,
-                                 download_link_b: download_link_b,
-                                 side_a_tracks: side_a_tracks,
-                                 side_b_tracks: side_b_tracks,
-                                 images: images
+        PublishUtils::create_blog_post vol: vol_num,
+                                       recipient: recipient,
+                                       subtitle: subtitle,
+                                       stream_link_a: stream_link_a,
+                                       stream_link_b: stream_link_b,
+                                       download_link_a: download_link_a,
+                                       download_link_b: download_link_b,
+                                       side_a_tracks: side_a_tracks,
+                                       side_b_tracks: side_b_tracks,
+                                       images: images
       end
     end
 
@@ -126,16 +142,16 @@ describe 'PublishUtils' do
       end
 
       it "throws the error" do
-        expect { Publish.create_blog_post vol: vol_num,
-                                          recipient: recipient,
-                                          subtitle: subtitle,
-                                          stream_link_a: stream_link_a,
-                                          stream_link_b: stream_link_b,
-                                          download_link_a: download_link_a,
-                                          download_link_b: download_link_b,
-                                          side_a_tracks: side_a_tracks,
-                                          side_b_tracks: side_b_tracks,
-                                          images: images
+        expect { PublishUtils::create_blog_post vol: vol_num,
+                                               recipient: recipient,
+                                               subtitle: subtitle,
+                                               stream_link_a: stream_link_a,
+                                               stream_link_b: stream_link_b,
+                                               download_link_a: download_link_a,
+                                               download_link_b: download_link_b,
+                                               side_a_tracks: side_a_tracks,
+                                               side_b_tracks: side_b_tracks,
+                                               images: images
         }.to raise_error(StandardError)
       end
     end
@@ -166,7 +182,7 @@ describe 'PublishUtils' do
         end
 
         it "uploads without creating a new subfolder" do
-          link_1, link_2 = Publish.upload_mp3s_to_google_drive valid_path1, valid_path2, vol_num
+          link_1, link_2 = PublishUtils::upload_mp3s_to_google_drive valid_path1, valid_path2, vol_num
           expect(link_1).to eq(download_link_a)
           expect(link_2).to eq(download_link_b)
         end
@@ -179,7 +195,7 @@ describe 'PublishUtils' do
         end
 
         it "creates a new subfolder and then uploads to it" do
-          link_1, link_2 = Publish.upload_mp3s_to_google_drive valid_path1, valid_path2, vol_num
+          link_1, link_2 = PublishUtils::upload_mp3s_to_google_drive valid_path1, valid_path2, vol_num
           expect(link_1).to eq(download_link_a)
           expect(link_2).to eq(download_link_b)
         end
@@ -192,7 +208,7 @@ describe 'PublishUtils' do
       end
 
       it "throws an ExternalDependencyError" do
-        expect { Publish.upload_mp3s_to_google_drive(valid_path1, valid_path2, vol_num) }.to raise_error(Publish::ExternalDependencyError)
+        expect { PublishUtils::upload_mp3s_to_google_drive(valid_path1, valid_path2, vol_num) }.to raise_error(PublishUtils::ExternalDependencyError)
       end
     end
   end
