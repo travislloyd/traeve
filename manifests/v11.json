@@ -1,0 +1,54 @@
+{
+  "volume": 11,
+  "subtitle": "primed for beauty",
+  "recipient": "Ryan",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v11--ryan/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v11--ryan/HRv11sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v11--ryan/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Mist", 
+        "artist": "James Black"
+      },
+      {
+        "title": "Kes On Aeg",
+        "artist": "Velly Joonas"
+      },
+      {
+        "title": "She Doesn't Have a Good Brain",
+        "artist": "Lily Konigsberg"
+      },
+      {
+        "title": "Ballade de Melody Nelson",
+        "artist": "Serge Gainsbourg"
+      },
+      {
+        "title": "The Whistle Song",
+        "artist": "Frankie Knuckles"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v11--ryan/HRv11sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v11--ryan/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Why You Wanna Treat Me So Bad", 
+        "artist": "Prince"
+      },
+      {
+        "title": "Fare Thee Well, Miss Carousel",
+        "artist": "Townes Van Zandt"
+      },
+      {
+        "title": "Time To",
+        "artist": "Hungry Cloud Darkening"
+      },
+      {
+        "title": "No Fear of Hellfire",
+        "artist": "Nap Eyes"
+      }
+    ]
+  }
+}
