@@ -156,38 +156,42 @@ module PublishUtils
                                     recipient:,
                                     side_a_tracks:,
                                     side_b_tracks:)
-    puts "\nUploading Videos to Youtube..."
+    begin
+      puts "\nUploading Videos to Youtube..."
 
-    puts "\nCreating playlist..."
-    playlist_id = YoutubeClient::create_playlist "Hardly Relevant Vol.#{volume}", PLAYLIST_PRIVACY
-    puts "Playlist with id=#{playlist_id} created successfully!"
-    puts 
+      puts "\nCreating playlist..."
+      playlist_id = YoutubeClient::create_playlist "Hardly Relevant Vol.#{volume}", PLAYLIST_PRIVACY
+      puts "Playlist with id=#{playlist_id} created successfully!"
+      puts 
 
-    side_a_id = upload_to_youtube path: side_a_mkv_path,
-                                  vol: volume,
-                                  subtitle: subtitle,
-                                  recipient: recipient,
-                                  side: "A",
-                                  dl_link: side_a_download_url,
-                                  tracks: side_a_tracks
+      side_a_id = upload_to_youtube path: side_a_mkv_path,
+                                    vol: volume,
+                                    subtitle: subtitle,
+                                    recipient: recipient,
+                                    side: "A",
+                                    dl_link: side_a_download_url,
+                                    tracks: side_a_tracks
 
-    side_b_id = upload_to_youtube path: side_b_mkv_path,
-                                  vol: volume,
-                                  subtitle: subtitle,
-                                  recipient: recipient,
-                                  side: "B",
-                                  dl_link: side_b_download_url,
-                                  tracks: side_b_tracks
+      side_b_id = upload_to_youtube path: side_b_mkv_path,
+                                    vol: volume,
+                                    subtitle: subtitle,
+                                    recipient: recipient,
+                                    side: "B",
+                                    dl_link: side_b_download_url,
+                                    tracks: side_b_tracks
 
-    puts "\nAdding Side A to playlist..."
-    YoutubeClient::add_to_playlist playlist_id, side_a_id
-    puts "Successfully added Side A to playlist!"
+      puts "\nAdding Side A to playlist..."
+      YoutubeClient::add_to_playlist playlist_id, side_a_id
+      puts "Successfully added Side A to playlist!"
 
-    puts "Adding Side B to playlist..."
-    YoutubeClient::add_to_playlist playlist_id, side_b_id
-    puts "Successfully added Side B to playlist!"
+      puts "Adding Side B to playlist..."
+      YoutubeClient::add_to_playlist playlist_id, side_b_id
+      puts "Successfully added Side B to playlist!"
 
-    puts "\nVideos uploaded to Youtube successfully!"
+      puts "\nVideos uploaded to Youtube successfully!"
+    rescue YoutubeClient::YoutubeError => e
+      raise ExternalDependencyError.new e
+    end
     return "https://youtu.be/#{side_a_id}", "https://youtu.be/#{side_b_id}"
   end
 

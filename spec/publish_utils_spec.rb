@@ -11,6 +11,10 @@ describe 'PublishUtils' do
   let(:invalid_files) { [valid_path1, invalid_path]}
   let(:download_link_a) { "download_link_a" }
   let(:download_link_b) { "download_link_b" }
+  let(:side_a_tracks) { [ { "artist": "artist_1", "title": "title 1" },
+                          { "artist": "artist 2", "title": "title 2" }] }
+  let(:side_b_tracks) { [ { "artist": "artist_3", "title": "title 3" },
+                          { "artist": "artist 4", "title": "title 4" }] }
 
   describe 'validate_source_files' do
 
@@ -108,10 +112,6 @@ describe 'PublishUtils' do
   describe "create_blog_post" do
     let(:stream_link_a) { "stream link a" }
     let(:stream_link_b) { "stream_link_b" }
-    let(:side_a_tracks) { [ { "artist": "artist_1", "title": "title 1" },
-                            { "artist": "artist 2", "title": "title 2" }] }
-    let(:side_b_tracks) { [ { "artist": "artist_3", "title": "title 3" },
-                            { "artist": "artist 4", "title": "title 4" }] }
     let(:images) { [ "/test/img/1.jpg", "/test/img/2.jpg" ]} 
 
     context "when inputs are valid" do
@@ -209,6 +209,58 @@ describe 'PublishUtils' do
 
       it "throws an ExternalDependencyError" do
         expect { PublishUtils::upload_mp3s_to_google_drive(valid_path1, valid_path2, vol_num) }.to raise_error(PublishUtils::ExternalDependencyError)
+      end
+    end
+  end
+
+  describe "upload_videos_to_youtube" do
+    let(:playlist_id) { 1 }
+    let(:mock_response) { double("Response") }
+    let(:side_a_mkv_path) { "sideA.mkv" }
+    let(:side_b_mkv_path) { "sideB.mkv" }
+    let(:side_a_download_path) { "sideA.dl" }
+    let(:side_b_download_path) { "sideB.dl" }
+
+    context "on success" do
+      before do
+        expect(YoutubeClient).to receive(:create_playlist).and_return(playlist_id)
+        expect(YoutubeClient).to receive(:add_to_playlist).twice
+        expect(YoutubeClient).to receive(:upload).twice.and_return(mock_response) 
+        expect(mock_response).to receive(:id).exactly(4).times.and_return 2
+      end
+
+      it "calls the YoutubeClient to create playlist, add to playlist, and upload" do
+        PublishUtils::upload_videos_to_youtube({
+          side_a_mkv_path: side_a_mkv_path,
+          side_b_mkv_path: side_b_mkv_path,
+          side_a_download_url: side_a_download_path,
+          side_b_download_url: side_b_download_path,
+          volume: vol_num,
+          subtitle: subtitle,
+          recipient: recipient,
+          side_a_tracks: side_a_tracks,
+          side_b_tracks: side_b_tracks
+        })
+      end
+    end
+
+    context "on error" do
+      before do
+        expect(YoutubeClient).to receive(:create_playlist).and_raise(YoutubeClient::YoutubeError)
+      end
+
+      it "throws an ExternalDepedencyError" do
+        expect { PublishUtils::upload_videos_to_youtube({
+          side_a_mkv_path: side_a_mkv_path,
+          side_b_mkv_path: side_b_mkv_path,
+          side_a_download_url: side_a_download_path,
+          side_b_download_url: side_b_download_path,
+          volume: vol_num,
+          subtitle: subtitle,
+          recipient: recipient,
+          side_a_tracks: side_a_tracks,
+          side_b_tracks: side_b_tracks
+        })}.to raise_error(PublishUtils::ExternalDependencyError)
       end
     end
   end
