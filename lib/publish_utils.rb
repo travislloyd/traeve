@@ -210,11 +210,11 @@ module PublishUtils
 
     puts "Uploading #{title_string}...."
     response = YoutubeClient::upload path,
-                              title_string,
-                              description_string,
-                              10, # music
-                              "Hardly Relevant",
-                              "private"
+                                     title_string,
+                                     description_string,
+                                     10, # music
+                                     "Hardly Relevant",
+                                     "private"
     puts "#{title_string} successfuly uploaded with ID=#{response.id}!"
 
     return response.id

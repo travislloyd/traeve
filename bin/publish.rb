@@ -3,8 +3,6 @@ require "json-schema"
 require "json"
 require_relative "../lib/publish_utils"
 
-# TODO
-# -- specify versions in gemfile
 class ManifestPublisher
 	SCHEMA_PATH = 'manifests/manifestSchema.json'
 
