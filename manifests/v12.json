@@ -1,0 +1,54 @@
+{
+  "volume": 12,
+  "subtitle": "welcome home",
+  "recipient": "Nelesi",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v12--nelesi/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v12--nelesi/HRv12sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v12--nelesi/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Language Lesson", 
+        "artist": "Church Ave"
+      },
+      {
+        "title": "Yemiasleks Fikir",
+        "artist": "Hailu Mergia and the Walias"
+      },
+      {
+        "title": "That Summer Feeling",
+        "artist": "Jonathan Richman"
+      },
+      {
+        "title": "What's My Memory For?",
+        "artist": "OK Vancouver OK"
+      },
+      {
+        "title": "Suzanne (Live)",
+        "artist": "Nina Simone"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v12--nelesi/HRv12sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v12--nelesi/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Help Camionneur", 
+        "artist": "Jane Birkin"
+      },
+      {
+        "title": "Is This What You Wanted",
+        "artist": "Leonard Cohen"
+      },
+      {
+        "title": "The Scorpion Lament",
+        "artist": "The Roches"
+      },
+      {
+        "title": "Pascal",
+        "artist": "Motohiko Hamase"
+      }
+    ]
+  }
+}
