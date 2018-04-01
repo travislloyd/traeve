@@ -227,10 +227,10 @@ module PublishUtils
   def self.daterange_string_from_vol(vol_num)
     # Project started on New Years, so start_date for a given volume can be found by adding 7 days * the number of volumes that have elapsed
     start_date = Date.new(Time.now().year) + ( (vol_num.to_i - 1) * 7 )
-    end_date = start_date + 7
+    end_date = start_date + 6
     
     # Title dates are of format: "M/D/YY"
-    title_date_format = "%_m/%-d/%y"
+    title_date_format = "%-m/%-d/%y"
     "#{start_date.strftime(title_date_format)} - #{end_date.strftime(title_date_format)}"
   end
 

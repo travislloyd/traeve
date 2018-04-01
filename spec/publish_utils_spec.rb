@@ -264,4 +264,10 @@ describe 'PublishUtils' do
       end
     end
   end
+
+  describe "daterange string from vol" do
+    it "returns a date of the expected format" do
+      expect(PublishUtils::daterange_string_from_vol(2)).to eq("1/8/18 - 1/14/18")
+    end
+  end
 end

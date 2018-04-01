@@ -1,0 +1,54 @@
+{
+  "volume": 13,
+  "subtitle": "regional gray",
+  "recipient": "Cam",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v13--cam/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v13--cam/HRv13sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v13--cam/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Gainesville", 
+        "artist": "Earth"
+      },
+      {
+        "title": "Do Ya Think I'm Sexy",
+        "artist": "Rod Stewart"
+      },
+      {
+        "title": "Big Day Today",
+        "artist": "Tonstartssbandht"
+      },
+      {
+        "title": "Green River Suite",
+        "artist": "Robbie Basho"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v13--cam/HRv13sideB(edited).mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v13--cam/cover.jpg", 
+    "tracks": [
+      {
+        "title": "Rosebud (REMOVED FROM YOUTUBE VID CUZ OF COPYRIGHT)",
+        "artist": "U.S. Girls"
+      },
+      { 
+        "title": "Last Kind Words", 
+        "artist": "Geechie Wiley"
+      },
+      {
+        "title": "Entertainment",
+        "artist": "The Divided Self"
+      },
+      {
+        "title": "Minute Prologue",
+        "artist": "Leonard Cohen"
+      },
+      {
+        "title": "22nd Century",
+        "artist": "Nina Simone"
+      }
+    ]
+  }
+}
