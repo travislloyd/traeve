@@ -1,0 +1,42 @@
+{
+  "volume": 14,
+  "subtitle": "my fresh air",
+  "recipient": "Maren",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v14--maren/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v14--maren/HRv14sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v14--maren/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Firecracker", 
+        "artist": "Yellow Magic Orchestra"
+      },
+      {
+        "title": "Flowerages",
+        "artist": "Maher Shalal Hash Baz"
+      },
+      {
+        "title": "Plastic Love",
+        "artist": "Maria Takeuchi"
+      },
+      {
+        "title": "Free",
+        "artist": "Chakra"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v14--maren/HRv14sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v14--maren/cover.jpg", 
+    "tracks": [
+      {
+        "title": "Sparkle",
+        "artist": "Tatsuro Yamashita"
+      },
+      { 
+        "title": "Talking", 
+        "artist": "Haruomi Hosono"
+      }
+    ]
+  }
+}
