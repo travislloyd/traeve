@@ -7,7 +7,7 @@ layout: padded-page
 
 i've always been interested in the democratizing potential of the internet.  in the past i’ve worked on projects that helped unknown artists make and distribute their creative work, but these days i’m more interested in technology that addresses the social issues facing urban populations, such as issues of economic and racial inequality.
 
-i current work at [whole whale](https://www.wholewhale.com/){:target="_blank"}, a brooklyn-based social-impact-focused digital agency.
+i currently work at [whole whale](https://www.wholewhale.com/){:target="_blank"}, a brooklyn-based social-impact-focused digital agency.
 
 #### past projects:
 
