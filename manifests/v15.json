@@ -1,0 +1,54 @@
+{
+  "volume": 15,
+  "subtitle": "truly gliding",
+  "recipient": "Ana",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v15--ana/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v15--ana/HRv15sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v15--ana/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Moving On", 
+        "artist": "Ryuichi Sakamoto"
+      },
+      {
+        "title": "Sports Men",
+        "artist": "Haruomi Hosono"
+      },
+      {
+        "title": "Capybara",
+        "artist": "Miharu Koshi and Haruomi Hosono"
+      },
+      {
+        "title": "Konna Fūni Sugite Iku No Nara",
+        "artist": "Maki Asakawa"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v15--ana/HRv15sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v15--ana/cover.jpg", 
+    "tracks": [
+      {
+        "title": "Sora Ni Mau Maboroshi",
+        "artist": "Mariah"
+      },
+      { 
+        "title": "Shisen", 
+        "artist": "Mariah"
+      },
+      { 
+        "title": "Shinzo No Tobira", 
+        "artist": "Mariah"
+      },
+      { 
+        "title": "Kakashi", 
+        "artist": "Yasuaki Shimizu"
+      },
+      { 
+        "title": "Kono Yo Ni Yomeri #2", 
+        "artist": "Yasuaki Shimizu"
+      }
+    ]
+  }
+}
