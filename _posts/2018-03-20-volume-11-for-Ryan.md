@@ -1,5 +1,5 @@
 ---
-title: "volume 11 (3/12/18 - 3/19/18): for ryan"
+title: "volume 11 (3/12/18 - 3/18/18): for ryan"
 subtitle: primed for beauty
 category: hardlyrelevant
 volume: v11

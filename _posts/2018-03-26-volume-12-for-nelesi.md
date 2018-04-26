@@ -1,5 +1,5 @@
 ---
-title: "volume 12 (3/19/18 - 3/26/18): for nelesi"
+title: "volume 12 (3/19/18 - 3/25/18): for nelesi"
 subtitle: welcome home
 category: hardlyrelevant
 volume: v12
