@@ -1,0 +1,59 @@
+{
+  "volume": 17,
+  "subtitle": "moving blues",
+  "recipient": "Dan",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v17--dan/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v17--dan/HRv17sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v17--dan/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Robots Dancing", 
+        "artist": "Woo"
+      },
+      {
+        "title": "Owe It 2 The Girls",
+        "artist": "Locate S,1"
+      },
+      {
+        "title": "Full of Fire",
+        "artist": "Al Green"
+      },
+      {
+        "title": "Foolish Season",
+        "artist": "Dana Gillespie"
+      },
+      {
+        "title": "Harvest Moon",
+        "artist": "Neil Young"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v17--dan/HRv17sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v17--dan/cover.jpg", 
+    "tracks": [
+      {
+        "title": "Song of Emigration",
+        "artist": "Albanian Women's Group From Kolonjë"
+      },
+      { 
+        "title": "Will The Circle Be Unbroken", 
+        "artist": "Marisa Anderson"
+      },
+      { 
+        "title": "The Last DJ", 
+        "artist": "Tom Petty & The Heartbreakers"
+      },
+      { 
+        "title": "Paris Loves Lovers", 
+        "artist": "Fred Astaire & Carol Richards"
+      },
+      { 
+        "title": "Carnival", 
+        "artist": "The Cardigans"
+      }
+    ]
+  }
+}
+
