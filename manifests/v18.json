@@ -1,0 +1,59 @@
+{
+  "volume": 18,
+  "subtitle": "the lentil as edible pulse",
+  "recipient": "Noah",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v18--noah/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v18--noah/HRv18sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v18--noah/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Sunday's Jammers", 
+        "artist": "The Lentils"
+      },
+      {
+        "title": "Brattleboro Is Flooding",
+        "artist": "The Lentils"
+      },
+      {
+        "title": "That Sweet Disease",
+        "artist": "The Lentils"
+      },
+      {
+        "title": "I Lost My Favorite Enemy",
+        "artist": "The Lentils"
+      },
+      {
+        "title": "The Bed Is The Killer",
+        "artist": "The Lentils"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v18--noah/HRv18sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v18--noah/cover.jpg", 
+    "tracks": [
+      {
+        "title": "The Song That Ruined My Life",
+        "artist": "The Lentils"
+      },
+      {
+        "title": "My Mentor's Microphone",
+        "artist": "The Lentils"
+      },
+      {
+        "title": "Mama's Boys",
+        "artist": "The Lentils"
+      },
+      {
+        "title": "The Loaves of Oblivion",
+        "artist": "The Lentils"
+      },
+      {
+        "title": "I Belong In Buffalo Springfield",
+        "artist": "The Lentils"
+      }
+    ]
+  }
+}
+
