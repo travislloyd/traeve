@@ -4,7 +4,7 @@ subtitle: runnin'
 category: hardlyrelevant
 volume: v19
 youtube-a: https://youtu.be/xsqXHWf_GYM
-download-a: https://drive.google.com/file/d/1V3a3RMxZHVCt1McyFSpC9ly3IfSsviRH/view?usp=drivesdk
+download-a: https://drive.google.com/open?id=1AYCp1Uu1Z9ghInAviTmBoOFAdlJH8BJa 
 youtube-b: https://youtu.be/KTuBD5ucfU0
 download-b: https://drive.google.com/file/d/19vwDKlCJXm3zo3jP_ihqJIq-oOzdt7Dp/view?usp=drivesdk
 images:
