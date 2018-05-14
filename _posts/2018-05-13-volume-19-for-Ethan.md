@@ -3,10 +3,10 @@ title: "volume 19 (5/7/18 - 5/13/18): for ethan"
 subtitle: runnin'
 category: hardlyrelevant
 volume: v19
-youtube-a: https://youtu.be/Jn1_dOntqjA
-download-a: https://drive.google.com/file/d/1VeL6OFoju04FjoJqebJw8YSD-K-u0fDI/view?usp=drivesdk
-youtube-b: https://youtu.be/8BvPZ4xfrTM
-download-b: https://drive.google.com/file/d/19PulJl4GXyR3kyJaSRySE9b7ch7gHiNV/view?usp=drivesdk
+youtube-a: https://youtu.be/xsqXHWf_GYM
+download-a: https://drive.google.com/file/d/1V3a3RMxZHVCt1McyFSpC9ly3IfSsviRH/view?usp=drivesdk
+youtube-b: https://youtu.be/KTuBD5ucfU0
+download-b: https://drive.google.com/file/d/19vwDKlCJXm3zo3jP_ihqJIq-oOzdt7Dp/view?usp=drivesdk
 images:
 - cover.jpg
 layout: two-col
