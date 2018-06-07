@@ -1,0 +1,63 @@
+{
+  "volume": 21,
+  "subtitle": "my sins / burnout rock",
+  "recipient": "Mary",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v21--mary/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v21--mary/HRv21sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v21--mary/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Wash Away",
+        "artist": "My Sins"
+      },
+      {
+        "title": "Squeeze Me So Tight",
+        "artist": "My Sins"
+      },
+      {
+        "title": "My Heart'll Go Running",
+        "artist": "My Sins"
+      },
+      {
+        "title": "Is There a Boo",
+        "artist": "My Sins"
+      },
+      {
+        "title": "Song 3",
+        "artist": "My Sins"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v21--mary/HRv21sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v21--mary/cover.jpg", 
+    "tracks": [
+      {
+        "title": "Burnout Rock",
+        "artist": "My Sins"
+      },
+      {
+        "title": "Song For a Flute",
+        "artist": "My Sins"
+      },
+      {
+        "title": "Vegan Honeymoon",
+        "artist": "My Sins"
+      },
+      {
+        "title": "You Left The Light Turned On",
+        "artist": "My Sins"
+      },
+      {
+        "title": "One Night Stand",
+        "artist": "My Sins"
+      },
+      {
+        "title": "Walkin' By A Match",
+        "artist": "My Sins"
+      }
+    ]
+  }
+}
+
