@@ -1,0 +1,59 @@
+{
+  "volume": 22,
+  "subtitle": "leopard pantheon",
+  "recipient": "Manvir",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v22--manvir/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v22--manvir/HRv22sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v22--manvir/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Just Like Me",
+        "artist": "Some Kind Of Wonderful"
+      },
+      {
+        "title": "It's Gonna Work Out",
+        "artist": "Yukihiro Takahashi"
+      },
+      {
+        "title": "Groan",
+        "artist": "Dazey And The Scouts"
+      },
+      {
+        "title": "Poor Moon",
+        "artist": "Canned Heat"
+      },
+      {
+        "title": "Melting",
+        "artist": "in the blue shirt"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v22--manvir/HRv22sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v22--manvir/cover.jpg", 
+    "tracks": [
+      {
+        "title": "Valve (Ft. Miyako Koda)",
+        "artist": "Visible Cloaks"
+      },
+      {
+        "title": "Temple Sky Salt",
+        "artist": "The Sky Mata"
+      },
+      {
+        "title": "Theme from girlSperm",
+        "artist": "gSp"
+      },
+      {
+        "title": "Mrhaba (Cervo Edit)",
+        "artist": "Majid Bekkas"
+      },
+      {
+        "title": "Journey to the West",
+        "artist": "Carpainter"
+      }
+    ]
+  }
+}
+
