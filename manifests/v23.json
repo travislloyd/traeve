@@ -1,0 +1,47 @@
+{
+  "volume": 23,
+  "subtitle": "cusp of something",
+  "recipient": "Colin",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v23--colin/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v23--colin/HRv23sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v23--colin/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Everybody's Alone",
+        "artist": "Neil Young"
+      },
+      {
+        "title": "More Women",
+        "artist": "Saada Bonaire"
+      },
+      {
+        "title": "Me And My Arrow",
+        "artist": "Harry Nilsson"
+      },
+      {
+        "title": "Play Us A Waltz",
+        "artist": "Hazel Dickens"
+      },
+      {
+        "title": "Selfless State",
+        "artist": "So Inagawa"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v23--colin/HRv23sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v23--colin/cover.jpg", 
+    "tracks": [
+      {
+        "title": "Spells",
+        "artist": "Jenny Hval"
+      },
+      {
+        "title": "Earl Grey (Stuck in a Groove)",
+        "artist": "Girl Ray"
+      }
+    ]
+  }
+}
+
