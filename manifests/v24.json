@@ -1,0 +1,51 @@
+{
+  "volume": 24,
+  "subtitle": "country executive",
+  "recipient": "Ashley",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v24--ashley/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v24--ashley/HRv24sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v24--ashley/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Chopin Etude Op. 25 No. 6",
+        "artist": "Jake Tobin"
+      },
+      {
+        "title": "She's My Lady",
+        "artist": "V.O."
+      },
+      {
+        "title": "If You Leave Me Now",
+        "artist": "Chicago"
+      },
+      {
+        "title": "Highwayman",
+        "artist": "The Highwaymen"
+      },
+      {
+        "title": "AFC Tower Song",
+        "artist": "Amps for Christ"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v24--ashley/HRv24sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v24--ashley/cover.jpg", 
+    "tracks": [
+      {
+        "title": "Yene Honeh Newy",
+        "artist": "Aster Aweke"
+      },
+      {
+        "title": "Sa Fosca",
+        "artist": "Joan Bibiloni"
+      },
+      {
+        "title": "Sit Too Long",
+        "artist": "DUMMER"
+      }
+    ]
+  }
+}
+
