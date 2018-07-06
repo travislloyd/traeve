@@ -1,0 +1,27 @@
+{
+  "volume": 25,
+  "subtitle": "live in nanaimo",
+  "recipient": "BZ",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v25--bz/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v25--bz/HRv25sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v25--bz/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Live @ Babe Land (Sinkerfest) 7/1/18",
+        "artist": "Bad Sister"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v25--bz/HRv25sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v25--bz/cover.jpg", 
+    "tracks": [
+      {
+        "title": "Live @ Nanaimo River (Sinkerfest Acoustic River Soak) 7/1/18",
+        "artist": "Smithy Ramone"
+      }
+    ]
+  }
+}
+
