@@ -1,0 +1,55 @@
+{
+  "volume": 26,
+  "subtitle": "bi-coastal boogie",
+  "recipient": "Kat",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v26--kat/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v26--kat/HRv26sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v26--kat/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Nothing From Nothing",
+        "artist": "Billy Preston"
+      },
+      { 
+        "title": "Like Sugar",
+        "artist": "Chaka Khan"
+      },
+      { 
+        "title": "Friend of the Devil",
+        "artist": "Grateful Dead"
+      },
+      { 
+        "title": "Passion Flower",
+        "artist": "Haruomi Hosono"
+      },
+      { 
+        "title": "Jaan Pehchan Ho",
+        "artist": "Muhammad Rafi"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v26--kat/HRv26sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v26--kat/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Magnet",
+        "artist": "NRBQ"
+      },
+      { 
+        "title": "It's So Hard To Break A Habit",
+        "artist": "The Webs"
+      },
+      { 
+        "title": "Everywhere",
+        "artist": "Fleetwood Mac"
+      },
+      { 
+        "title": "Can't You Hear Me Knocking",
+        "artist": "The Rolling Stones"
+      }
+    ]
+  }
+}
+
