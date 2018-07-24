@@ -13,7 +13,7 @@ layout: two-col
 ---
 #### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. You Can Get It If You Really Want -- Jimmy Cliff
-1. A Little Lost -- Arthur Russell
+1. A Little Lost -- Pale Red (covering Arthur Russell)
 2. These Days -- Johnny Darrell
 3. Para ouvir no rádio (Luciana) -- Jorge Ben
 4. Evil Sin -- Shy Boys
