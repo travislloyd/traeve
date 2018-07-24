@@ -1,0 +1,63 @@
+{
+  "volume": 27,
+  "subtitle": "new york...again...",
+  "recipient": "Claire",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v27--claire/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v27--claire/HRv27sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v27--claire/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "You Can Get It If You Really Want",
+        "artist": "Jimmy Cliff"
+      },
+      { 
+        "title": "A Little Lost",
+        "artist": "Arthur Russell"
+      },
+      { 
+        "title": "These Days",
+        "artist": "Johnny Darrell"
+      },
+      { 
+        "title": "Para ouvir no rádio (Luciana)",
+        "artist": "Jorge Ben"
+      },
+      { 
+        "title": "Evil Sin",
+        "artist": "Shy Boys"
+      },
+      { 
+        "title": "Don't Huzzle For Love",
+        "artist": "The Apostles"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v27--claire/HRv27sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v27--claire/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Say Goodbye",
+        "artist": "Hiroshi Satoh"
+      },
+      { 
+        "title": "From The Late To The Early",
+        "artist": "Ron Wood & Ronnie Lane"
+      },
+      { 
+        "title": "Plash",
+        "artist": "Takako Minekawa"
+      },
+      { 
+        "title": "Birds",
+        "artist": "Neil Young"
+      },
+      { 
+        "title": "Fireflies Made Out Of Dust (Take One)",
+        "artist": "Happy Jawbone Family Band"
+      }
+    ]
+  }
+}
+
