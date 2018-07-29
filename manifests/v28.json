@@ -1,0 +1,59 @@
+{
+  "volume": 28,
+  "subtitle": "walkin with a smile on",
+  "recipient": "Nina",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v28--nina/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v28--nina/HRv28sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v28--nina/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "A Higher Power",
+        "artist": "Jonathan Richman"
+      },
+      { 
+        "title": "I Am The Clown Of Disco Town",
+        "artist": "Fancy Rosy"
+      },
+      { 
+        "title": "Comment Te Dire Adieu",
+        "artist": "Francoise Hardy"
+      },
+      { 
+        "title": "Steal Away",
+        "artist": "Robbie Dupree"
+      },
+      { 
+        "title": "I Wonder If I Care As Much",
+        "artist": "The Everly Brothers"
+      },
+      { 
+        "title": "Eartha Kitt on Love and Compromise",
+        "artist": "Eartha Kitt"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v28--nina/HRv28sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v28--nina/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Landslide",
+        "artist": "Minivan"
+      },
+      { 
+        "title": "Lejania",
+        "artist": "Lisandro Meza"
+      },
+      { 
+        "title": "Shees",
+        "artist": "L I T H I C S"
+      },
+      { 
+        "title": "Hollow Sound Of The Morning Chimes",
+        "artist": "TOPS"
+      }
+    ]
+  }
+}
+
