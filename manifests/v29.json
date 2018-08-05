@@ -1,0 +1,50 @@
+{
+  "volume": 29,
+  "subtitle": "heard in color",
+  "recipient": "Cory",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v29--cory/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v29--cory/HRv29sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v29--cory/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Coo Coo Coo",
+        "artist": "Santigold"
+      },
+      { 
+        "title": "What Is Love",
+        "artist": "Haddaway"
+      },
+      { 
+        "title": "Gimme Gimme Gimme!",
+        "artist": "ABBA"
+      },
+      { 
+        "title": "Egir Awetah",
+        "artist": "Aster Aweke"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v29--cory/HRv29sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v29--cory/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Un altro mare",
+        "artist": "Ennio Morricone"
+      },
+      { 
+        "title": "One Of These Nights",
+        "artist": "The Eagles"
+      },
+      { 
+        "title": "Xilo Fiaba Que Stà E Resta",
+        "artist": "Francesco Cavaliere"
+      },
+      { 
+        "title": "Sitting in Limbo",
+        "artist": "Jimmy Cliff"
+      }
+    ]
+  }
+}
