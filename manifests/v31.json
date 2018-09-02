@@ -1,0 +1,66 @@
+{
+  "volume": 31,
+  "subtitle": "de-skunked // new york comedown",
+  "recipient": "Maggie",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v31--maggie/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v31--maggie/HRv31sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v31--maggie/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Everybody Knows This Is Nowhere (De-skunk edition)",
+        "artist": "Neil Young"
+      },
+      { 
+        "title": "Round & Round (It Won't Be Long) (De-skunk edition)",
+        "artist": "Neil Young"
+      },
+      { 
+        "title": "Orang Outan",
+        "artist": "Jane Birkin"
+      },
+      { 
+        "title": "7 Smile",
+        "artist": "Lily Konigsberg"
+      },
+      { 
+        "title": "Slip Away",
+        "artist": "Clarence Carter"
+      },
+      { 
+        "title": "Tous Les Garcons et Les Filles",
+        "artist": "Francoise Hardy"
+      },
+      { 
+        "title": "Beautiful Eyes of Virginia",
+        "artist": "Daniel Bachman"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v31--maggie/HRv31sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v31--maggie/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Conexão",
+        "artist": "Amber Mark"
+      },
+      { 
+        "title": "Le Debut De La Fin",
+        "artist": "Domenique Dumont"
+      },
+      { 
+        "title": "Big Black Car",
+        "artist": "Big Star"
+      },
+      { 
+        "title": "Milenu",
+        "artist": "Tewelde Redda"
+      },
+      { 
+        "title": "Do I Love You",
+        "artist": "The Ronettes"
+      }
+    ]
+  }
+}
