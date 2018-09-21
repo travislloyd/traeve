@@ -1,0 +1,34 @@
+{
+  "volume": 32,
+  "subtitle": "hudson take me home",
+  "recipient": "Matt",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v32--matt/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v32--matt/HRv32sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v32--matt/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Live @ Nanaimo River (Sinkerfest Acoustic River Soak) 7/1/18 (Part 1)",
+        "artist": "White Poppy"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v32--matt/HRv32sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v32--matt/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Live @ Nanaimo River (Sinkerfest Acoustic River Soak) 7/1/18 (Part 2)",
+        "artist": "White Poppy"
+      },
+      { 
+        "title": "Descent to the Zenith",
+        "artist": "Earth"
+      },
+      { 
+        "title": "Harvest Moon",
+        "artist": "Jane Birkin"
+      }
+    ]
+  }
+}
