@@ -1,0 +1,58 @@
+{
+  "volume": 33,
+  "subtitle": "night bike",
+  "recipient": "Zack",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v33--zack/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v33--zack/HRv33sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v33--zack/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Sweat Like Sieves",
+        "artist": "Diggs Duke"
+      },
+      { 
+        "title": "Today",
+        "artist": "Lily Konigsberg"
+      },
+      { 
+        "title": "Monet In The 90's",
+        "artist": "Chris Weisman"
+      },
+      { 
+        "title": "Chelsea",
+        "artist": "Robert Wyatt"
+      },
+      { 
+        "title": "Give Me",
+        "artist": "I-Level"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v33--zack/HRv33sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v33--zack/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Ode to Street Hassle",
+        "artist": "Spaceman 3"
+      },
+      { 
+        "title": "Ganier Ridge",
+        "artist": "Asher Horton"
+      },
+      { 
+        "title": "Meet Me In The City",
+        "artist": "Junior Kimbrough"
+      },
+      { 
+        "title": "João e Duvê",
+        "artist": "Xangai"
+      },
+      { 
+        "title": "Both Sides, Now",
+        "artist": "Joni Mitchell"
+      }
+    ]
+  }
+}
