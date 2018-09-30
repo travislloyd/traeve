@@ -1,0 +1,46 @@
+{
+  "volume": 34,
+  "subtitle": "snock sermon",
+  "recipient": "Alex",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v34--alex/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v34--alex/HRv34sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v34--alex/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Live @ Union Pool 9/19/18 (Part 1)",
+        "artist": "Michael Hurley"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v34--alex/HRv34sideB_edited.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v34--alex/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Orlando (removed from YouTube version due to copyright)",
+        "artist": "Blood Orange"
+      },
+      { 
+        "title": "Train Your Child",
+        "artist": "Washington Phillips"
+      },
+      { 
+        "title": "Vacuumed By The Moon",
+        "artist": "The Lentils"
+      },
+      { 
+        "title": "La Harpe Jaune",
+        "artist": "Brigitte Fontaine, Areski Belkacem"
+      },
+      { 
+        "title": "O Relogio",
+        "artist": "Os Mutantes"
+      },
+      { 
+        "title": "Tunan",
+        "artist": "Mammane Sani et son Orgue"
+      }
+    ]
+  }
+}
