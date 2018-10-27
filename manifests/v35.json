@@ -1,0 +1,42 @@
+{
+  "volume": 35,
+  "subtitle": "scholar season",
+  "recipient": "Elliot",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v35--elliot/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v35--elliot/HRv35sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v35--elliot/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "I Love Hot Nights",
+        "artist": "Jonathan Richman"
+      },
+      { 
+        "title": "French Kiss",
+        "artist": "Smithy Ramone"
+      },
+      { 
+        "title": "Quasi Quasi",
+        "artist": "Domenique Dumont"
+      },
+      { 
+        "title": "Secondhand ASMR",
+        "artist": "The Lentils"
+      },
+      { 
+        "title": "Going Up The Country",
+        "artist": "Canned Heat"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v35--elliot/HRv35sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v35--elliot/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Live @ Union Pool 9/19/18 (Part 2)",
+        "artist": "Michael Hurley"
+      }
+    ]
+  }
+}
