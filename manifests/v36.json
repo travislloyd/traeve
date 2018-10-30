@@ -1,0 +1,62 @@
+{
+  "volume": 36,
+  "subtitle": "mid mid-atlantic",
+  "recipient": "Kelsey",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v36--kelsey",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v36--kelsey/HRv36sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v36--kelsey/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "1 2 3 4 5 SIXERS!",
+        "artist": "Philadelphia 76ers"
+      },
+      { 
+        "title": "Losing Track of Time",
+        "artist": "iji"
+      },
+      { 
+        "title": "The Theme From Moulin Rouge",
+        "artist": "Jonathan Richman"
+      },
+      { 
+        "title": "Kinky Love",
+        "artist": "Nancy Sinatra"
+      },
+      { 
+        "title": "Cars",
+        "artist": "Gary Numan"
+      },
+      { 
+        "title": "Damn, dis-moi",
+        "artist": "Christine and the Queens"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v36--kelsey/HRv36sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v36--kelsey/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "At Your Best (Let Me Know)",
+        "artist": "Aaliyah"
+      },
+      { 
+        "title": "Goldener Reiter",
+        "artist": "Joachim Witt"
+      },
+      { 
+        "title": "Unknown Fiddle Song 3.28.95 Vienna",
+        "artist": "Michael Hurley"
+      },
+      { 
+        "title": "Je Voudrais un Vin Rouge",
+        "artist": "ok vancouver ok"
+      },
+      { 
+        "title": "Why Is The Blood Running Warm",
+        "artist": "The Mighty Messiahs"
+      }
+    ]
+  }
+}
