@@ -3,10 +3,10 @@ title: "volume 37 (9/10/18 - 9/16/18): for erin"
 subtitle: passing through
 category: hardlyrelevant
 volume: v37
-youtube-a: https://youtu.be/_hOFmPVlEeo
-download-a: https://drive.google.com/file/d/1MDsS96Ku3pRUhTRaF8st-ah_cUSeF_uB/view?usp=drivesdk
-youtube-b: https://youtu.be/CCwJ1_VuHYg
-download-b: https://drive.google.com/file/d/1X6_thGAIX2RdpV5IyFxppGBmqV_RSVOH/view?usp=drivesdk
+youtube-a: https://youtu.be/F821vA6GsBg
+download-a: https://drive.google.com/file/d/1X4LvbIVu_iv5LgHierrPbdS09nHUVLES/view?usp=drivesdk
+youtube-b: https://youtu.be/drs6YefnvVg
+download-b: https://drive.google.com/open?id=1kIn4F4eTWT5ciDTaASwc-FXFSZryAFOj 
 images:
 - cover.jpg
 layout: two-col
@@ -20,5 +20,5 @@ layout: two-col
 
 #### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Sexual Healing -- Marvin Gaye
-1. Tangled Up In Blue (Take 3, Remake 3) -- Bob Dylan
+1. Tangled Up In Blue (Take 3, Remake 3) (REMOVED FROM YOUTUBE VERSION DUE TO COPYRIGHT) -- Bob Dylan
 2. Also Sprach Zarathustra -- Deodato
