@@ -258,7 +258,7 @@ module PublishUtils
 
     # Filename dates are of format: "2018-03-11"
     filename_date_format = "%Y-%m-%d"
-    post_path = "#{BLOG_POST_DIR}/#{Time.now.strftime(filename_date_format)}-volume-#{vol}-for-#{recipient}.md"
+    post_path = "#{BLOG_POST_DIR}/#{Time.now.strftime(filename_date_format)}-v#{vol}.md"
 
     puts "Creating blog post at #{post_path}"
     File.open(post_path, "w") do |file|

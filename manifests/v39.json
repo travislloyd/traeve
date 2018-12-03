@@ -1,0 +1,54 @@
+{
+  "volume": 39,
+  "subtitle": "still alive in new york",
+  "recipient": "Anna",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v39--anna/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v39--anna/HRv39sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v39--anna/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Shameless Love (live @ The Glove 10/12/18)",
+        "artist": "The Lentils"
+      },
+      { 
+        "title": "Unknown Bog Ripper #1 (live @ Secret Project Robot 11/6/18)",
+        "artist": "Mega Bog"
+      },
+      { 
+        "title": "Unknown Bog Ripper #2 (live @ Secret Project Robot 11/6/18)",
+        "artist": "Mega Bog"
+      },
+      { 
+        "title": "Unknown Bog Ripper #3 (live @ Secret Project Robot 11/6/18)",
+        "artist": "Mega Bog"
+      },
+      { 
+        "title": "Wildegeeses (live @ Flowers for All Occasions 11/18/18)",
+        "artist": "Matt Bachmann"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v39--anna/HRv39sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v39--anna/cover.jpg", 
+    "tracks": [
+      { 
+        "title": "Unknown Plucker #1 (live @ Trans Pecos 8/19/18)",
+        "artist": "Daniel Bachman"
+      },
+      { 
+        "title": "Unknown Plucker #2 (live @ Trans Pecos 8/19/18)",
+        "artist": "Daniel Bachman"
+      },
+      { 
+        "title": "Squeeze Me So Tight (live @ Café Bidet 6/8/18)",
+        "artist": "My Sins"
+      },
+      { 
+        "title": "Squeeze Me So Tight (live @ Café Bidet 6/8/18)",
+        "artist": "My Sins"
+      }
+    ]
+  }
+}
