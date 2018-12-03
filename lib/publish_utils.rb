@@ -283,7 +283,7 @@ module PublishUtils
     end
 
     puts "Blog post successfully created!"
-    return "http://traeve.com/hardlyrelevant/volume-#{vol}-for-#{recipient}.html"
+    return "http://traeve.com/hardlyrelevant/v#{vol}.html"
 	end
 
   def self.gen_fb_msg(volume, recipient, subtitle, stream_a, stream_b)
