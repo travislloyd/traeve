@@ -1,0 +1,50 @@
+{
+  "volume": 40,
+  "subtitle": "seasonal feeling",
+  "recipient": "Dan",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v40--dan/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v40--dan/HRv40sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v40--dan/cover.png", 
+    "tracks": [
+      { 
+        "title": "In My Dreams",
+        "artist": "Kali Uchis"
+      },
+      { 
+        "title": "Arindo",
+        "artist": "Idy-O-Idrissa"
+      },
+      { 
+        "title": "The Was and the Is",
+        "artist": "Glenn Jones"
+      },
+      { 
+        "title": "I'd Rather Be Blind (Live at Montreux 1975)",
+        "artist": "Etta James"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v40--dan/HRv40sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v40--dan/cover.png", 
+    "tracks": [
+      { 
+        "title": "Big Time",
+        "artist": "Neil Young & Crazy Horse"
+      },
+      { 
+        "title": "Cancion Mixteca",
+        "artist": "Ry Cooder"
+      },
+      { 
+        "title": "If I Were",
+        "artist": "Vashti Bunyan"
+      },
+      { 
+        "title": "Same But Different",
+        "artist": "Vashti Bunyan"
+      }
+    ]
+  }
+}
