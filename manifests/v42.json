@@ -1,0 +1,50 @@
+{
+  "volume": 42,
+  "subtitle": "catnip",
+  "recipient": "Bora + Scot",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v42--scot+bora/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v42--scot+bora/HRv42sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v42--scot+bora/cover.png", 
+    "tracks": [
+      { 
+        "title": "What'cha Gonna Do",
+        "artist": "Doris Troy feat Mystic Merlin"
+      },
+      { 
+        "title": "Youth Iron Rock",
+        "artist": "Nat Birchall"
+      },
+      { 
+        "title": "Soleil De Volt",
+        "artist": "Baloji"
+      },
+      { 
+        "title": "Make it Real",
+        "artist": "Suuns"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v42--scot+bora/HRv42sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v42--scot+bora/cover.png", 
+    "tracks": [
+      { 
+        "title": "Welcome feat. Natalie Slade",
+        "artist": "Space Invadas"
+      },
+      { 
+        "title": "90 Degrees",
+        "artist": "Yazmin Lacey"
+      },
+      { 
+        "title": "Verde",
+        "artist": "Lux Ferreira"
+      },
+      { 
+        "title": "Everybody Wants to Rule the World (12\" Extended Mix)",
+        "artist": "Tears for Fears"
+      }
+    ]
+  }
+}
