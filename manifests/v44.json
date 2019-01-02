@@ -1,0 +1,58 @@
+{
+  "volume": 44,
+  "subtitle": "Rock n' Roll New Year",
+  "recipient": "Victoria",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v44--victoria/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v44--victoria/HRv44sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v44--victoria/cover.png", 
+    "tracks": [
+      { 
+        "title": "Just My Imagination",
+        "artist": "The Tempatations"
+      },
+      { 
+        "title": "Himno",
+        "artist": "El Humano Marrano"
+      },
+      { 
+        "title": "Cangrejos En La Cocina",
+        "artist": "Línea Vienesa"
+      },
+      { 
+        "title": "Lanquidity",
+        "artist": "Sun Ra"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v44--victoria/HRv44sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v44--victoria/cover.png", 
+    "tracks": [
+      { 
+        "title": "Santa Claus is Coming to Town (Springsteen version)",
+        "artist": "The Snowflakes"
+      },
+      { 
+        "title": "Greensleeves",
+        "artist": "The Snowflakes"
+      },
+      { 
+        "title": "Please Come Home For Christmas (Eagles version)",
+        "artist": "The Snowflakes"
+      },
+      { 
+        "title": "Feliz Navidad",
+        "artist": "The Snowflakes"
+      },
+      { 
+        "title": "Sorrow's Forecast",
+        "artist": "Dead Moon"
+      },
+      { 
+        "title": "Tricentennial Music Moment: Irma Thomas",
+        "artist": "Irma Thomas"
+      }
+    ]
+  }
+}
