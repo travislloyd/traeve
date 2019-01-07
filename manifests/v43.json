@@ -1,0 +1,58 @@
+{
+  "volume": 43,
+  "subtitle": "I Want to Believe",
+  "recipient": "Nick",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v43--nick/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v43--nick/HRv43sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v43--nick/cover.png", 
+    "tracks": [
+      { 
+        "title": "Silent Night",
+        "artist": "Can"
+      },
+      { 
+        "title": "Yasmeen",
+        "artist": "Jeff Majors"
+      },
+      { 
+        "title": "Prayer Song Feat. Adam Ness",
+        "artist": "Noname"
+      },
+      { 
+        "title": "Don't You Know",
+        "artist": "Durand Jones & The Indications"
+      },
+      { 
+        "title": "Extraños Juegos",
+        "artist": "Zombies"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v43--nick/HRv43sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v43--nick/cover.png", 
+    "tracks": [
+      { 
+        "title": "My Name is Nobody",
+        "artist": "Ennio Morricone"
+      },
+      { 
+        "title": "Like an Animal",
+        "artist": "Shintaro Sakamoto"
+      },
+      { 
+        "title": "Wings",
+        "artist": "Kadhja Bonet"
+      },
+      { 
+        "title": "Surrealistic Rain",
+        "artist": "The Poets"
+      },
+      { 
+        "title": "Marooned in S.E.6 ft. Kevin Haynes Grupo Elegua",
+        "artist": "Moses Boyd"
+      }
+    ]
+  }
+}
