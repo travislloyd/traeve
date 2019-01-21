@@ -1,0 +1,54 @@
+{
+  "volume": 47,
+  "subtitle": "Capricorn",
+  "recipient": "",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v47--/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v47--/HRv47sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v47--/cover.png", 
+    "tracks": [
+      { 
+        "title": "Real Domestic Scene",
+        "artist": "Ben Varian"
+      },
+      { 
+        "title": "Loser",
+        "artist": "Camilla Motor"
+      },
+      { 
+        "title": "Plain and Sane and Simple Melody",
+        "artist": "Ted Lucas"
+      },
+      { 
+        "title": "Let Love Flow On",
+        "artist": "Sonya Spence"
+      },
+      { 
+        "title": "Sew Yale Sew",
+        "artist": "Tsegay Eshetu"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v47--/HRv47sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v47--/cover.png", 
+    "tracks": [
+      { 
+        "title": "Tomorrow",
+        "artist": "We All Together"
+      },
+      { 
+        "title": "Young Genius (feat. Joel Ross)",
+        "artist": "Makaya McCraven"
+      },
+      { 
+        "title": "Two Roomed Motel",
+        "artist": "Scott Gilmore"
+      },
+      { 
+        "title": "Glued to the Spot",
+        "artist": "Cheryl Glasgow"
+      }
+    ]
+  }
+}
