@@ -1,11 +1,11 @@
 {
   "volume": 45,
   "subtitle": "credit check",
-  "recipient": "",
-  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v45--/",
+  "recipient": "Camille",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v45--camille/",
   "sideA": {
-    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v45--/HRv45sideA.mp3", 
-    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v45--/cover.png", 
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v45--camille/HRv45sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v45--camille/cover.JPG", 
     "tracks": [
       { 
         "title": "Life's a Journey",
@@ -26,8 +26,8 @@
     ]
   },
   "sideB": {
-    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v45--/HRv45sideB.mp3", 
-    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v45--/cover.png", 
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v45--camille/HRv45sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v45--camille/cover.JPG", 
     "tracks": [
       { 
         "title": "Kompany w/ Smino & Phoelix",
