@@ -1,11 +1,11 @@
 {
   "volume": 46,
   "subtitle": "Move Too Fast",
-  "recipient": "",
-  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--/",
+  "recipient": "Natalie",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--natalie/",
   "sideA": {
-    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--/HRv46sideA.mp3", 
-    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--/cover.png", 
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--natalie/HRv46sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--natalie/cover.png", 
     "tracks": [
       { 
         "title": "Massive Life",
@@ -26,11 +26,11 @@
     ]
   },
   "sideB": {
-    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--/HRv46sideB.mp3", 
-    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--/cover.png", 
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--natalie/HRv46sideB_edited.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--natalie/cover.png", 
     "tracks": [
       { 
-        "title": "One Note Samba / Surfboard",
+        "title": "One Note Samba / Surfboard (removed from youtube version)",
         "artist": "Stereolab & Herbie Mann"
       },
       { 
