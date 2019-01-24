@@ -1,0 +1,50 @@
+{
+  "volume": 46,
+  "subtitle": "Move Too Fast",
+  "recipient": "Natalie",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--natalie/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--natalie/HRv46sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--natalie/cover.png", 
+    "tracks": [
+      { 
+        "title": "Massive Life",
+        "artist": "AEVA"
+      },
+      { 
+        "title": "More, More, More",
+        "artist": "Andrea True Connection"
+      },
+      { 
+        "title": "See My Jumper Hanging On The Line",
+        "artist": "R.L. Burnside"
+      },
+      { 
+        "title": "Besaid Island",
+        "artist": "Nobuo Uematsu, Masashi Hamauzu, Junya Nakano"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--natalie/HRv46sideB_edited.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v46--natalie/cover.png", 
+    "tracks": [
+      { 
+        "title": "One Note Samba / Surfboard (removed from youtube version)",
+        "artist": "Stereolab & Herbie Mann"
+      },
+      { 
+        "title": "I Lost Something in the Hills",
+        "artist": "Sibylle Baier"
+      },
+      { 
+        "title": "Find it in Your Eyes",
+        "artist": "The System"
+      },
+      { 
+        "title": "Firecracker (live)",
+        "artist": "Yellow Magic Orchestra"
+      }
+    ]
+  }
+}
