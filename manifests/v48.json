@@ -1,11 +1,11 @@
 {
   "volume": 48,
   "subtitle": "Snowbird",
-  "recipient": "",
-  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v48--/",
+  "recipient": "Daniel",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v48--daniel/",
   "sideA": {
-    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v48--/HRv48sideA.mp3", 
-    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v48--/cover.png", 
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v48--daniel/HRv48sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v48--daniel/cover.png", 
     "tracks": [
       { 
         "title": "Melodies of Love",
@@ -26,8 +26,8 @@
     ]
   },
   "sideB": {
-    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v48--/HRv48sideB.mp3", 
-    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v48--/cover.png", 
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v48--daniel/HRv48sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v48--daniel/cover.png", 
     "tracks": [
       { 
         "title": "Don't Take It",
