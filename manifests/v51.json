@@ -1,0 +1,58 @@
+{
+  "volume": 51,
+  "subtitle": "attention vertical",
+  "recipient": "Rob",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v51--rob/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v51--rob/HRv51sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v51--rob/cover.png", 
+    "tracks": [
+      { 
+        "title": "Musica",
+        "artist": "Aster Aweke"
+      },
+      { 
+        "title": "Don't You Want Me",
+        "artist": "The Human League"
+      },
+      { 
+        "title": "The Beach",
+        "artist": "Eugene"
+      },
+      { 
+        "title": "Livin' on a Star",
+        "artist": "King Tuff"
+      },
+      { 
+        "title": "Train Montage 1",
+        "artist": "Tindersticks"
+      },
+      { 
+        "title": "Farnham",
+        "artist": "Daniel Bachman"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v51--rob/HRv51sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v51--rob/cover.png", 
+    "tracks": [
+      { 
+        "title": "Me Name Tiger",
+        "artist": "Tiger"
+      },
+      { 
+        "title": "Diagonals",
+        "artist": "Stereolab"
+      },
+      { 
+        "title": "All the While",
+        "artist": "Hand Habits"
+      },
+      { 
+        "title": "I Wanna Dance with Somebody",
+        "artist": "Whitney Houston"
+      }
+    ]
+  }
+}
