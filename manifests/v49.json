@@ -1,0 +1,50 @@
+{
+  "volume": 49,
+  "subtitle": "thickly settled",
+  "recipient": "Sam",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v49--sam/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v49--sam/HRv49sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v49--sam/cover.png", 
+    "tracks": [
+      { 
+        "title": "Right Down The Line",
+        "artist": "Gerry Rafferty"
+      },
+      { 
+        "title": "Otis",
+        "artist": "The Durutti Column"
+      },
+      { 
+        "title": "Make Me a Song",
+        "artist": "Eleanor Friedberger"
+      },
+      { 
+        "title": "Slip Slidin' Away",
+        "artist": "Paul Simon"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v49--sam/HRv49sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v49--sam/cover.png", 
+    "tracks": [
+      { 
+        "title": "On Desert Oceans",
+        "artist": "Syracuse"
+      },
+      { 
+        "title": "What's New With You",
+        "artist": "Kassa Overall"
+      },
+      { 
+        "title": "Nightshift",
+        "artist": "Commodores"
+      },
+      { 
+        "title": "At Last I Am Free",
+        "artist": "Robert Wyatt"
+      }
+    ]
+  }
+}

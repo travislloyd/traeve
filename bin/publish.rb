@@ -34,15 +34,15 @@ class ManifestPublisher
                                        @recipient,
                                        :B 
 
-      PublishUtils::generate_video @side_a_mkv_path,
-                                   @side_a_image_path,
-                                   @side_a_mp3_path
-      write_to_output "sideA", mkvPath: @side_a_mkv_path
-
-      PublishUtils::generate_video @side_b_mkv_path,
-                                   @side_b_image_path,
-                                   @side_b_mp3_path
-      write_to_output "sideB", mkvPath: @side_b_mkv_path
+#      PublishUtils::generate_video @side_a_mkv_path,
+#                                   @side_a_image_path,
+#                                   @side_a_mp3_path
+#      write_to_output "sideA", mkvPath: @side_a_mkv_path
+#
+#      PublishUtils::generate_video @side_b_mkv_path,
+#                                   @side_b_image_path,
+#                                   @side_b_mp3_path
+#      write_to_output "sideB", mkvPath: @side_b_mkv_path
 
       @side_a_download_url,
       @side_b_download_url = PublishUtils::upload_mp3s_to_google_drive(
@@ -54,21 +54,21 @@ class ManifestPublisher
       write_to_output "sideA", downloadLink: @side_a_download_url 
       write_to_output "sideB", downloadLink: @side_b_download_url
 
-      @side_a_stream_url,
-      @side_b_stream_url = PublishUtils::upload_videos_to_youtube({
-        side_a_mkv_path: @side_a_mkv_path,
-        side_b_mkv_path: @side_b_mkv_path,
-        side_a_download_url: @side_a_download_url,
-        side_b_download_url: @side_b_download_url,
-        volume: @volume,
-        subtitle: @subtitle,
-        recipient: @recipient,
-        side_a_tracks: @side_a_tracks,
-        side_b_tracks: @side_b_tracks
-      })
-
-      write_to_output "sideA", streamLink: @side_a_stream_url
-      write_to_output "sideB", streamLink: @side_b_stream_url 
+#      @side_a_stream_url,
+#      @side_b_stream_url = PublishUtils::upload_videos_to_youtube({
+#        side_a_mkv_path: @side_a_mkv_path,
+#        side_b_mkv_path: @side_b_mkv_path,
+#        side_a_download_url: @side_a_download_url,
+#        side_b_download_url: @side_b_download_url,
+#        volume: @volume,
+#        subtitle: @subtitle,
+#        recipient: @recipient,
+#        side_a_tracks: @side_a_tracks,
+#        side_b_tracks: @side_b_tracks
+#      })
+#
+#      write_to_output "sideA", streamLink: @side_a_stream_url
+#      write_to_output "sideB", streamLink: @side_b_stream_url 
 
       if @side_a_image_path == @side_b_image_path
         images = [ @side_a_image_path ]
