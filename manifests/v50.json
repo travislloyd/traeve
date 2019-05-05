@@ -1,0 +1,58 @@
+{
+  "volume": 50,
+  "subtitle": "life in its poetic form",
+  "recipient": "Houston",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v50--houston/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v50--houston/HRv50sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v50--houston/cover.png", 
+    "tracks": [
+      { 
+        "title": "You Sexy Thing",
+        "artist": "Hot Chocolate"
+      },
+      { 
+        "title": "Arabesque No.1",
+        "artist": "Isao Tomita"
+      },
+      { 
+        "title": "I Think I Knew",
+        "artist": "Cate Le Bon"
+      },
+      { 
+        "title": "Wave Hello",
+        "artist": "Matt Bachmann"
+      },
+      { 
+        "title": "The Age of Self",
+        "artist": "Robert Wyatt"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v50--houston/HRv50sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v50--houston/cover.png", 
+    "tracks": [
+      { 
+        "title": "Je T'Adore",
+        "artist": "Alan Vega"
+      },
+      { 
+        "title": "Plastic",
+        "artist": "Moses Sumney"
+      },
+      { 
+        "title": "Diary of a Rose",
+        "artist": "Mega Bog"
+      },
+      { 
+        "title": "Wild One",
+        "artist": "Thin Lizzy"
+      },
+      { 
+        "title": "In Spring",
+        "artist": "Ela Orleans"
+      }
+    ]
+  }
+}
