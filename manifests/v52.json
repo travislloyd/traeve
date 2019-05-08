@@ -1,0 +1,66 @@
+{
+  "volume": 52,
+  "subtitle": "late bloomer",
+  "recipient": "Derek",
+  "outputDir": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v52--derek/",
+  "sideA": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v52--derek/HRv52sideA.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v52--derek/cover.png", 
+    "tracks": [
+      { 
+        "title": "Kind of Something There",
+        "artist": "Chris Weisman"
+      },
+      { 
+        "title": "I Love to Float",
+        "artist": "Chris Weisman"
+      },
+      { 
+        "title": "18 Years Ago Today",
+        "artist": "Chris Weisman"
+      },
+      { 
+        "title": "Twizzler",
+        "artist": "Chris Weisman"
+      },
+      { 
+        "title": "I'm Feeling Intense",
+        "artist": "Chris Weisman"
+      },
+      { 
+        "title": "My Model",
+        "artist": "Chris Weisman"
+      },
+      { 
+        "title": "Purple on a Bobbin",
+        "artist": "Chris Weisman"
+      }
+    ]
+  },
+  "sideB": {
+    "mp3Path": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v52--derek/HRv52sideB.mp3", 
+    "imgPath": "/Users/travislloyd/Desktop/notes/HARDLYRELEVANT/Tapes/v52--derek/cover.png", 
+    "tracks": [
+      { 
+        "title": "Basketball Jones",
+        "artist": "Space Jam"
+      },
+      { 
+        "title": "Like a Prayer",
+        "artist": "Madonna"
+      },
+      { 
+        "title": "Family Affair",
+        "artist": "Sly and the Family Stone"
+      },
+      { 
+        "title": "Love Under the Apple Tree",
+        "artist": "Bill Brown and the Soul Injection"
+      },
+      { 
+        "title": "O My Stars",
+        "artist": "Michael Hurley"
+      }
+    ]
+  }
+}
