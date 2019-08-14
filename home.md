@@ -5,9 +5,11 @@ layout: padded-page
 ---
 ## technology work
 
-i've always been interested in the democratizing potential of the internet.  in the past i’ve worked on projects that helped unknown artists make and distribute their creative work, but these days i’m more interested in technology that addresses the social issues facing urban populations, such as issues of economic and racial inequality.
+i'm interested in the democratizing potential of the internet.  
 
-i currently work as a front end engineer at [paladin](https://www.joinpaladin.com/){:target="_blank"}.
+my past work helped artists make and distribute their creative projects.  these days i'm focused on social issues of equity and access faced by urban populations.  
+
+i currently work as a software engineer at [paladin](https://www.joinpaladin.com/){:target="_blank"}.
 
 #### past projects:
 
@@ -21,5 +23,6 @@ i currently work as a front end engineer at [paladin](https://www.joinpaladin.co
 ## art
 i'm interested in how digital technologies can enrich, not replace, physical communities and lives lived away from screens.
 
-#### current project:
-[hardly relevant](hardlyrelevant.html): _a medium for meaning in the digital age_
+#### past projects:
+* [hardly relevant mixtapes](hardlyrelevant.html): _a medium for meaning in the digital age_
+* [hardly relevant records](https://www.hardlyrelevant.net){:target="_blank"}: _record label, etc._
