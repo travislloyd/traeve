@@ -11,13 +11,13 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Gainesville -- Earth
 1. Do Ya Think I'm Sexy -- Rod Stewart
 2. Big Day Today -- Tonstartssbandht
 3. Green River Suite -- Robbie Basho
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Rosebud (REMOVED FROM YOUTUBE VID CUZ OF COPYRIGHT) -- U.S. Girls
 1. Last Kind Words -- Geechie Wiley
 2. Entertainment -- The Divided Self

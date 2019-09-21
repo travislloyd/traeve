@@ -11,14 +11,14 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Sunday's Jammers -- The Lentils
 1. Brattleboro Is Flooding -- The Lentils
 2. That Sweet Disease -- The Lentils
 3. I Lost My Favorite Enemy -- The Lentils
 4. The Bed Is The Killer -- The Lentils
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. The Song That Ruined My Life -- The Lentils
 1. My Mentor's Microphone -- The Lentils
 2. Mama's Boys -- The Lentils

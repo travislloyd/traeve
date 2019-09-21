@@ -11,7 +11,7 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. 1 2 3 4 5 SIXERS! -- Philadelphia 76ers
 1. Losing Track of Time -- iji
 2. The Theme From Moulin Rouge -- Jonathan Richman
@@ -19,7 +19,7 @@ layout: two-col
 4. Cars -- Gary Numan
 5. Damn, dis-moi -- Christine and the Queens
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. At Your Best (Let Me Know) -- Aaliyah
 1. Goldener Reiter -- Joachim Witt
 2. Unknown Fiddle Song 3.28.95 Vienna -- Michael Hurley

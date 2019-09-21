@@ -11,14 +11,14 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Wash Away -- My Sins
 1. Squeeze Me So Tight -- My Sins
 2. My Heart'll Go Running -- My Sins
 3. Is There a Boo -- My Sins
 4. Song 3 -- My Sins
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Burnout Rock -- My Sins
 1. Song For a Flute -- My Sins
 2. Vegan Honeymoon -- My Sins

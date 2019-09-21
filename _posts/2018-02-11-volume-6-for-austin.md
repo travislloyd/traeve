@@ -11,14 +11,14 @@ images:
 - v6cover.jpg
 layout: two-col 
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 1. Aozora (Blue Sky) -- Sheena Ringo
 2. The Stars vs The Creatures -- Colleen
 3. Monkey's Gone to Heaven -- Pixies
 4. Carina Botto -- Tredici Bacci
 5. Over You -- S the Supplicant
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 1. See You On the Cyan Shore -- Pill Wonder
 2. What's Your Sign Girl? -- Danny Pearson
 3. Bsslama Habiti -- Fadoul

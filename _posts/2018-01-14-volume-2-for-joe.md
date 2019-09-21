@@ -11,7 +11,7 @@ images:
 - HRv2SideA.JPG
 layout: two-col 
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 1. The Paradox of Thrift -- Chris Weisman
 2. Given Gate -- Chris Weisman
 3. Double Bill -- Chris Weisman
@@ -20,7 +20,7 @@ layout: two-col
 6. The Winning Blues -- Chris Weisman
 7. Church Ave Jubilation -- Joe's Window
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 1. Church Ave Melody -- Joe's Window
 2. Donkeys Bearing Cups -- Craig Leon
 3. I Just Wanna Be Good -- Cate Le Bon

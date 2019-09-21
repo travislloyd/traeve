@@ -11,7 +11,7 @@ images:
 - v8cover.jpg
 layout: two-col 
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 1. Look At What Happened -- CE Schneider Topical
 2. Trick Candles -- CE Schneider Topical
 3. Chopin Chemists -- CE Schneider Topical
@@ -21,7 +21,7 @@ layout: two-col
 7. Free Luck -- Christina Schneider
 8. Little Women -- Christina Schneider 
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 1. Dreams -- CE Schneider Topical
 2. Something to Eat -- CE Schneider Topical
 3. Look Who Showed Up Out Here -- CE Schneider Topical

@@ -11,13 +11,13 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. It Makes You Forget (Itgehane) -- Peggy Gou
 1. When Am I Going To Make A Living -- Sade
 2. Goodbye Sadness -- Yoko Ono
 3. Dream On The Sand -- Wally Badarou
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. A Fix On You -- Dead Moon
 1. Last Train Home -- Pat Metheny Group
 2. Wish U Well -- Pleather

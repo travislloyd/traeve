@@ -11,14 +11,14 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Nothing From Nothing -- Billy Preston
 1. Like Sugar -- Chaka Khan
 2. Friend of the Devil -- Grateful Dead
 3. Passion Flower -- Haruomi Hosono
 4. Jaan Pehchan Ho -- Muhammad Rafi
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Magnet -- NRBQ
 1. It's So Hard To Break A Habit -- The Webs
 2. Everywhere -- Fleetwood Mac

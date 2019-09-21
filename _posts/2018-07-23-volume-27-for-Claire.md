@@ -11,7 +11,7 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. You Can Get It If You Really Want -- Jimmy Cliff
 1. A Little Lost -- Pale Red (covering Arthur Russell)
 2. These Days -- Johnny Darrell
@@ -19,7 +19,7 @@ layout: two-col
 4. Evil Sin -- Shy Boys
 5. Don't Huzzle For Love -- The Apostles
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Say Goodbye -- Hiroshi Satoh
 1. From The Late To The Early -- Ron Wood & Ronnie Lane
 2. Plash -- Takako Minekawa

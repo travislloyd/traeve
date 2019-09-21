@@ -11,7 +11,7 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. A Higher Power -- Jonathan Richman
 1. I Am The Clown Of Disco Town -- Fancy Rosy
 2. Comment Te Dire Adieu -- Francoise Hardy
@@ -19,7 +19,7 @@ layout: two-col
 4. I Wonder If I Care As Much -- The Everly Brothers
 5. Eartha Kitt on Love and Compromise -- Eartha Kitt
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Landslide -- Minivan
 1. Lejania -- Lisandro Meza
 2. Shees -- L I T H I C S

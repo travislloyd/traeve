@@ -11,14 +11,14 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Mist -- James Black
 1. Kes On Aeg -- Velly Joonas
 2. She Doesn't Have a Good Brain -- Lily Konigsberg
 3. Ballade de Melody Nelson -- Serge Gainsbourg
 4. The Whistle Song -- Frankie Knuckles
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Why You Wanna Treat Me So Bad -- Prince
 1. Fare Thee Well, Miss Carousel -- Townes Van Zandt
 2. Time To -- Hungry Cloud Darkening

@@ -11,14 +11,14 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Superstar -- Hollie Cook
 1. Come On Home -- Lijadu Sisters
 2. White Fur -- Dear Nora
 3. Maurilia -- Raphaël Top Secret
 4. Water -- Juan Wauters
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. You Can Betcha In Love -- Fontella Bass
 1. My Life -- Noriko Miyamoto
 2. Plantasia -- Mort Garson

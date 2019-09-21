@@ -11,14 +11,14 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Look to the Sky -- Emily Remler
 1. I'd Fly Away -- Al Green
 2. Chin Chin Chidori -- Sachiko Nishida
 3. I Have Known Love -- Silver Apples
 4. The Holy Life That's Coming -- Chris Weisman
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Sexual Healing -- Marvin Gaye
 1. Tangled Up In Blue (Take 3, Remake 3) (REMOVED FROM YOUTUBE VERSION DUE TO COPYRIGHT) -- Bob Dylan
 2. Also Sprach Zarathustra -- Deodato

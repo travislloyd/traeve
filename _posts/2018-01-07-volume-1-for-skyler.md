@@ -11,14 +11,14 @@ images:
 - HRv1SideA.JPG
 layout: two-col 
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 1. No More Quirky Indie Murders Please -- Plum Professional
 2. Cosoco -- Juana Molina
 3. Mãoscolorida -- Os Mulheres Negras
 4. Nowhere To Go -- Genevieve Artadi
 5. Everybody Knows -- Leonard Cohen from I'm Your Man
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 1. Judee Sill -- Emerald River Dance
 2. Rolling Along -- Lucinda Williams
 3. Roy Orbison - In Dreams (w/ deranged nieghborhood construction)

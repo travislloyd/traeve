@@ -11,13 +11,13 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Moving On -- Ryuichi Sakamoto
 1. Sports Men -- Haruomi Hosono
 2. Capybara -- Miharu Koshi and Haruomi Hosono
 3. Konna Fūni Sugite Iku No Nara -- Maki Asakawa
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Sora Ni Mau Maboroshi -- Mariah
 1. Shisen -- Mariah
 2. Shinzo No Tobira -- Mariah

@@ -11,14 +11,14 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Language Lesson -- Church Ave
 1. Yemiasleks Fikir -- Hailu Mergia and the Walias
 2. That Summer Feeling -- Jonathan Richman
 3. What's My Memory For? -- OK Vancouver OK
 4. Suzanne (Live) -- Nina Simone
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Help Camionneur -- Jane Birkin
 1. Is This What You Wanted -- Leonard Cohen
 2. The Scorpion Lament -- The Roches

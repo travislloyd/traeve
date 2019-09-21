@@ -11,12 +11,12 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Firecracker -- Yellow Magic Orchestra
 1. Flowerages -- Maher Shalal Hash Baz
 2. Plastic Love -- Maria Takeuchi
 3. Free -- Chakra
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Sparkle -- Tatsuro Yamashita
 1. Talking -- Haruomi Hosono

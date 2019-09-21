@@ -11,14 +11,14 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Just Like Me -- Some Kind Of Wonderful
 1. It's Gonna Work Out -- Yukihiro Takahashi
 2. Groan -- Dazey And The Scouts
 3. Poor Moon -- Canned Heat
 4. Melting -- in the blue shirt
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Valve (Ft. Miyako Koda) -- Visible Cloaks
 1. Temple Sky Salt -- The Sky Mata
 2. Theme from girlSperm -- gSp

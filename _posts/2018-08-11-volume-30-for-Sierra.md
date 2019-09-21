@@ -11,7 +11,7 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Make This Young Lady Mine -- The Mad Lads
 1. Your Motion Says -- Arthur Russell
 2. Opal Elections -- Ruth Garbus
@@ -19,7 +19,7 @@ layout: two-col
 4. Game That I Play -- Jessica Pratt
 5. Honey Hi -- Fleetwood Mac
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Something On Your Mind -- Karen Dalton
 1. Gambling Charley -- Michael Hurley
 2. Sometimes The Most Beautiful People Are Also The Saddest People -- Blue Mug

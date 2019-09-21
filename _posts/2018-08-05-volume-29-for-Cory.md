@@ -11,13 +11,13 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Coo Coo Coo -- Santigold
 1. What Is Love -- Haddaway
 2. Gimme Gimme Gimme! -- ABBA
 3. Egir Awetah -- Aster Aweke
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Un altro mare -- Ennio Morricone
 1. One Of These Nights -- The Eagles (removed from Youtube version due to copyright)
 2. Xilo Fiaba Que Stà E Resta -- Francesco Cavaliere

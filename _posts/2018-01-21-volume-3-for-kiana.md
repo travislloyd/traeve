@@ -11,14 +11,14 @@ images:
 - HRv3SideA.jpg
 layout: two-col 
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 1. For The Old World -- Mega Bog
 2. Mangungu -- Zazou Bikaye
 3. Prom -- SZA
 4. Cathy's Clown -- Everly Brothers
 5. So You Say -- Michael Hurley
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 1. Jackfruit 3000 -- Flatbush Caton Market
 2. Patterns for Alto -- Lea Bertucci
 3. Powderfinger -- Neil Young

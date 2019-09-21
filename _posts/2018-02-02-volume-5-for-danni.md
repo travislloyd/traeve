@@ -11,14 +11,14 @@ images:
 - v5cover.jpg
 layout: two-col 
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 1. Kawasaki -- Jane Birkin
 2. Arthur Hakase No Jinriki Hikouki -- Kazuhiko Kato
 3. Saturn Drive -- Alan Vega
 4. In The Garden -- Michael Hurley
 5. Blue Light -- Younger Shoulder
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 1. Everyday -- William Onyeabor
 2. Are You Leaving For The Country -- Karen Dalton
 3. Back, Baby -- Jessica Pratt

@@ -11,7 +11,7 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Everybody Knows This Is Nowhere (De-skunk edition) -- Neil Young
 1. Round + Round (It Won't Be Long) (De-skunk edition) -- Neil Young
 2. Orang Outan -- Jane Birkin 
@@ -20,7 +20,7 @@ layout: two-col
 5. Tous Les Garcons et Les Filles -- Francoise Hardy
 6. Beautiful Eyes of Virginia -- Daniel Bachman 
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Conexão -- Amber Mark 
 1. Le Debut De La Fin -- Domenique Dumont 
 2. Big Black Car -- Big Star 

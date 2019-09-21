@@ -11,14 +11,14 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Robots Dancing -- Woo
 1. Owe It 2 The Girls -- Locate S,1
 2. Full of Fire -- Al Green
 3. Foolish Season -- Dana Gillespie
 4. Harvest Moon -- Neil Young
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Song of Emigration -- Albanian Women's Group From Kolonjë
 1. Will The Circle Be Unbroken -- Marisa Anderson
 2. The Last DJ -- Tom Petty & The Heartbreakers

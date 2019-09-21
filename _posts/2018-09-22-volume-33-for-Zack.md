@@ -11,14 +11,14 @@ images:
 - cover.jpg
 layout: two-col
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 0. Sweat Like Sieves -- Diggs Duke
 1. Today -- Lily Konigsberg
 2. Monet In The 90's -- Chris Weisman
 3. Chelsea -- Robert Wyatt
 4. Give Me -- I-Level
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 0. Ode to Street Hassle -- Spaceman 3
 1. Ganier Ridge -- Asher Horton
 2. Meet Me In The City -- Junior Kimbrough

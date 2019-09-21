@@ -11,7 +11,7 @@ images:
 - v7cover.jpg
 layout: two-col 
 ---
-#### Side A ( <a target="_blank" href="{{ page.youtube-a }}">stream</a> / <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
+#### Side A ( <a target="_blank" href="{{ page.download-a }}">download</a> ) ####
 1. Fazendo Arte -- Egberto Gismonti
 2. Funnnel of Love -- Wanda Jackson
 3. Strange Insistence -- Gun Outfit
@@ -19,7 +19,7 @@ layout: two-col
 5. Losing You -- Solange
 6. Pearly -- Palm
 
-#### Side B ( <a target="_blank" href="{{ page.youtube-b }}">stream</a> / <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
+#### Side B ( <a target="_blank" href="{{ page.download-b }}">download</a> ) ####
 1. +371 -- Domenique Dumont
 2. Sharkey's Day -- Laurie Anderson
 3. Sleep Walk -- Santo & Johnny
