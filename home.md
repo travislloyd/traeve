@@ -26,3 +26,10 @@ i'm interested in how digital technologies can enrich, not replace, physical com
 #### past projects:
 * [hardly relevant mixtapes](hardlyrelevant.html): _a medium for meaning in the digital age_
 * [hardly relevant records](https://www.hardlyrelevant.net){:target="_blank"}: _record label, etc._
+
+****
+
+## music 
+* [my sins](https://mysins.bandcamp.com/){:target="_blank"}: _burnout rock + more (2018-present)_
+* [nightmom](https://nightmom.bandcamp.com/){:target="_blank"}: _rattlesnake rock/sludge twang (2013-2016)_
+* [hey human](https://heyhuman.bandcamp.com/){:target="_blank"}: _college "jass" (2012-2014)_
