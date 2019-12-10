@@ -47,6 +47,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+h5 {
+  font-size: 10pt;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 20px;
+}
 .landing-image {
   position: absolute;
   margin: auto;
@@ -64,6 +70,16 @@ table {
 
 .landing-image:hover {
   background-position: -619px -5px;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.img-responsive__vertical {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 #page-content {
@@ -173,6 +189,12 @@ table {
       padding-top: 20px;
       display: block;
     }
+
+  .img-responsive__vertical {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 form {
   padding-bottom: 20px;
