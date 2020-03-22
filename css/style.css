@@ -299,3 +299,6 @@ ol {
     margin: auto;
   }
 }
+#mixtape + p {
+  padding-bottom: 0;
+}
