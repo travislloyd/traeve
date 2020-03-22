@@ -3,6 +3,12 @@ title: travis lloyd
 subtitle: travis is a technologist, artist, and musician living in brooklyn, ny. @hardly__relevant
 layout: padded-page
 ---
+## mixtape 
+
+personally relevant, february 2020: [for lovers only](mixtape.html)
+
+****
+
 ## technology work
 
 i'm interested in the democratizing potential of the internet.  
