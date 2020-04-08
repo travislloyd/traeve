@@ -1,5 +1,6 @@
 ---
 title: the selected works of janet grice aka mom 
+description: studio and live recordings
 layout: mixtape 
 image: /img/2020apr/mom&nana.jpg
 ---
