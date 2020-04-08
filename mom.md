@@ -1,6 +1,7 @@
 ---
 title: the selected works of janet grice aka mom 
 layout: mixtape 
+image: /img/2020apr/mom&nana.jpg
 ---
 ![mom&nana](/img/2020apr/mom&nana.jpg){:class="img-responsive"}
 ##### "the selected works of janet grice aka mom" ~~ april 2k20
