@@ -5,7 +5,7 @@ layout: padded-page
 ---
 ## mixtape 
 
-personally relevant, february 2020: [for lovers only](mixtape.html)
+personally relevant, april 2020: [selected works of janet grice aka mom](mixtape.html)
 
 ****
 

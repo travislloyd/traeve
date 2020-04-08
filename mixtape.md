@@ -1,11 +1,11 @@
 ---
-title: for lovers only
+title: the selected works of janet grice aka mom 
 layout: mixtape 
 ---
-<a href="https://drive.google.com/open?id=1tGLbCElbFd5iU1tkIelqm5V9R7eUpxMc">
-![sign](/img/2020feb/sign_small.jpeg){:class="img-responsive__vertical"}
-</a>
-##### "for lovers only" ~~ february 2k20
-<a href="https://drive.google.com/open?id=1tGLbCElbFd5iU1tkIelqm5V9R7eUpxMc">
-![cover](/img/2020feb/cover_small.JPG){:class="img-responsive__vertical"}
-</a>
+![mom&nana](/img/2020apr/mom&nana.jpg){:class="img-responsive"}
+##### "the selected works of janet grice aka mom" ~~ april 2k20
+<h5>
+<a href="https://drive.google.com/open?id=1sx_aoe47Ma1d-PNKmQtFIhzulMiIeRD8">part 1: in the studio</a><br>
+<a href="https://drive.google.com/open?id=1NyNs5L4pq5fUjUHyu6t0Q6e354x8Agm1">part 2: live</a>
+</h5>
+![tape](/img/2020apr/mom_tape.jpg){:class="img-responsive__vertical"}
