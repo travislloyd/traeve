@@ -1,6 +1,6 @@
 ---
 title: travis lloyd
-subtitle: travis is a technologist, artist, and musician living in brooklyn, ny. @hardly__relevant
+subtitle: travis is a technologist, artist, and musician living in brooklyn, ny.
 layout: padded-page
 ---
 ## mixtape 
