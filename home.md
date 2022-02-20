@@ -1,14 +1,8 @@
 ---
 title: travis lloyd
-subtitle: travis is a technologist, artist, and musician living in brooklyn, ny.
+subtitle: travis is a technologist, musician, and artist living in brooklyn, ny.
 layout: padded-page
 ---
-## mixtape 
-
-personally relevant, april 2020: [selected works of janet grice aka mom](mixtape.html)
-
-****
-
 ## technology work
 
 i'm interested in the democratizing potential of the internet.  
@@ -30,8 +24,8 @@ i currently work as a software engineer at [paladin](https://www.joinpaladin.com
 i'm interested in how digital technologies can enrich, not replace, physical communities and lives lived away from screens.
 
 #### past projects:
-* [hardly relevant mixtapes](hardlyrelevant.html): _a medium for meaning in the digital age_
-* [hardly relevant records](https://www.hardlyrelevant.net){:target="_blank"}: _record label, etc._
+* [hardly relevant records](https://www.hardlyrelevant.net){:target="_blank"}: _record label, etc. (2019-present)_ 
+* [hardly relevant mixtapes](hardlyrelevant.html): _a medium for meaning in the digital age (2018)_
 
 ****
 
@@ -39,3 +33,10 @@ i'm interested in how digital technologies can enrich, not replace, physical com
 * [my sins](https://mysins.bandcamp.com/){:target="_blank"}: _burnout rock + more (2018-present)_
 * [nightmom](https://nightmom.bandcamp.com/){:target="_blank"}: _rattlesnake rock/sludge twang (2013-2016)_
 * [hey human](https://heyhuman.bandcamp.com/){:target="_blank"}: _college "jass" (2012-2014)_
+
+****
+
+## mixtape 
+
+personally relevant, april 2020: [selected works of janet grice aka mom](mixtape.html)
+
