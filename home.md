@@ -25,7 +25,7 @@ i'm interested in how digital technologies can enrich, not replace, physical com
 
 #### past projects:
 * [hardly relevant records](https://www.hardlyrelevant.net){:target="_blank"}: _record label, etc. (2019-present)_ 
-* [hardly relevant mixtapes](hardlyrelevant.html): _a medium for meaning in the digital age (2018)_
+* [hardly relevant mixtapes](hardlyrelevant.html){:target="_blank"}: _a medium for meaning in the digital age (2018)_
 
 ****
 
@@ -38,5 +38,5 @@ i'm interested in how digital technologies can enrich, not replace, physical com
 
 ## mixtape 
 
-personally relevant, april 2020: [selected works of janet grice aka mom](mixtape.html)
+personally relevant, april 2020: [selected works of janet grice aka mom](mixtape.html){:target="_blank"}
 
