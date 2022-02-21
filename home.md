@@ -5,18 +5,17 @@ layout: padded-page
 ---
 ## technology work
 
-i'm interested in the democratizing potential of the internet.  
+i'm interested in the internet as a tool for progress.  
 
-my past work helped artists make and distribute their creative projects.  these days i'm focused on social issues of equity and access faced by urban populations.  
+recently i've been building technology to increase access to legal aid.
 
-i currently work as a software engineer at [paladin](https://www.joinpaladin.com/){:target="_blank"}.
+i'm looking for a new opportunity in an engineering, product, or leadership role focused on **privacy**.
 
 #### past projects:
 
-* [lighthouse by whole whale](https://www.wholewhale.com/lighthouse/){:target="_blank"}: _web analytics tool for nonprofits_
-* [amazon storywriter](https://storywriter.amazon.com){:target="_blank"}: _cloud-based text editor for screenplays_
-* [amazon studios](https://studios.amazon.com){:target="_blank"}: _screenplay submission platform_
-* [amazon video direct](https://videodirect.amazon.com){:target="_blank"}: _video self-publishing platform_
+* [upsolve](https://upsolve.org/){:target="_blank"}: bankruptcy relief + financial empowerment
+* [paladin](https://joinpaladin.com/){:target="_blank"}: pro bono legal aid
+* [amazon studios](https://studios.amazon.com){:target="_blank"}: creative tools for filmmakers
 
 ****
 
