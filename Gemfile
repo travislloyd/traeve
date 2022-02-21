@@ -27,6 +27,8 @@ gem "taglib-ruby"
 gem "streamio-ffmpeg"
 gem "google_drive"
 gem "google-api-client", '>0.7'
+gem "nokogiri", ">= 1.12.5"
+
 
 group :test do
   gem 'rspec', '~> 3.0'
