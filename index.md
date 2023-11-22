@@ -5,10 +5,11 @@ layout: padded-page
 ---
 ## research 
 
-i am currently a PhD student in Information Science advised by [Mor Naaman](https://mmoorr.github.io/www_personal/){:target="_blank"} at Cornell Tech.
+i am a first year Information Science PhD student at Cornell Tech. 
+i am advised by [Mor Naaman](https://mmoorr.github.io/www_personal/){:target="_blank"} and am a member of the [Social Technologies Lab](https://s.tech.cornell.edu/){:target="_blank"}.
 i am funded by the NSF through a [CSGrad4US fellowship](https://www.nsf.gov/cise/CSGrad4US/){:target="_blank"}.
 
-i returned to academia after nearly a decade in industry and i'm happy to mentor others considering a similar change. feel free to reach out.
+i returned to academia after nearly a decade in industry and i am happy to mentor others considering a similar change. feel free to reach out.
 
 #### publications 
 
