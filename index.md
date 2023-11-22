@@ -1,19 +1,28 @@
 ---
 title: travis lloyd
-subtitle: travis is a researcher, technologist, and musician living in brooklyn, ny.
+subtitle: travis is a researcher, public interest technologist, and musician in brooklyn, ny.
 layout: padded-page
 ---
 ## research 
 
-i am currently a PhD student in Information Science at Cornell Tech advised by [Mor Naaman](https://mornaaman.com/){:target="_blank"}.
+i am currently a PhD student in Information Science advised by [Mor Naaman](https://mmoorr.github.io/www_personal/){:target="_blank"} at Cornell Tech.
+i am funded by the NSF through a [CSGrad4US fellowship](https://www.nsf.gov/cise/CSGrad4US/){:target="_blank"}.
+
+i returned to academia after nearly a decade in industry and i'm happy to mentor others considering a similar change. feel free to reach out.
+
+#### publications 
+
+* __"There Has To Be a Lot That We're Missing": Moderating AI-Generated Content on Reddit__   
+Travis Lloyd, Joseph Reagle, Mor Naaman  
+[*arXiv preprint*](https://arxiv.org/abs/2311.12702){:target="_blank"}. 2023.  
 
 ****
 
 ## technology work
 
-i'm interested in the internet as a tool for progress.  
+i'm interested in the internet as a tool for social progress.  
 
-my recent engineering work has focused on privacy and increasing access to legal aid.
+my recent engineering work has focused on privacy and increasing access to free legal aid.
 
 #### past employment:
 
@@ -24,23 +33,7 @@ my recent engineering work has focused on privacy and increasing access to legal
 
 ****
 
-## art
-i'm interested in how digital technologies can enrich, not replace, physical communities and lives lived away from screens.
-
-#### past projects:
-* [hardly relevant records](https://www.hardlyrelevant.net){:target="_blank"}: _record label, etc. (2019-present)_ 
-* [hardly relevant mixtapes](hardlyrelevant.html){:target="_blank"}: _a medium for meaning in the digital age (2018)_
-
-****
-
 ## music 
-* [my sins](https://mysins.bandcamp.com/){:target="_blank"}: _burnout rock + more (2018-present)_
-* [nightmom](https://nightmom.bandcamp.com/){:target="_blank"}: _rattlesnake rock/sludge twang (2013-2016)_
-* [hey human](https://heyhuman.bandcamp.com/){:target="_blank"}: _college "jass" (2012-2014)_
-
-****
-
-## mixtape 
-
-personally relevant, april 2020: [selected works of janet grice aka mom](mixtape.html){:target="_blank"}
-
+* [hardly relevant records](https://www.hardlyrelevant.net){:target="_blank"}
+* [hardly relevant mixtapes](hardlyrelevant.html){:target="_blank"}
+* [personally relevant](mixtape.html){:target="_blank"} 
