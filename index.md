@@ -5,13 +5,17 @@ layout: padded-page
 ---
 ## research 
 
-i am a first year Information Science PhD student at Cornell Tech. 
+i am a second year Information Science PhD student at Cornell Tech. 
 i am advised by [Mor Naaman](https://mmoorr.github.io/www_personal/){:target="_blank"} and am a member of the [Social Technologies Lab](https://s.tech.cornell.edu/){:target="_blank"}.
 i am funded by the NSF through a [CSGrad4US fellowship](https://www.nsf.gov/cise/CSGrad4US/){:target="_blank"}.
 
 i returned to academia after nearly a decade in industry and i am happy to mentor others considering a similar change. feel free to reach out.
 
 #### publications 
+
+* __AI Rules? Characterizing Reddit Community Policies Towards AI-Generated Content__\
+Travis Lloyd, Jennah Gosciak, Tung Nguyen, Mor Naaman\
+[*arXiv preprint*](https://arxiv.org/abs/2410.11698){:target="_blank"}. 2024.  
 
 * __"There Has To Be a Lot That We're Missing": Moderating AI-Generated Content on Reddit__   
 Travis Lloyd, Joseph Reagle, Mor Naaman  
